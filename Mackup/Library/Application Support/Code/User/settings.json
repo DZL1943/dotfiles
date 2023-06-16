@@ -1,0 +1,76 @@
+{
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "[lisp]": {
+        "editor.tabSize": 2
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+        "editor.tabSize": 4
+    },
+    "editor.cursorBlinking": "expand",
+    "editor.detectIndentation": true,
+    "editor.fontSize": 18,
+    "editor.guides.bracketPairs": "active",
+    "editor.minimap.autohide": true,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.stickyTabStops": true,
+    "editor.wordWrap": "on",
+    "explorer.autoReveal": false,
+    "explorer.confirmDelete": false,
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "files.autoGuessEncoding": true,
+    "files.defaultLanguage": "markdown",
+    "files.exclude": {
+        "**/.trash": true
+    },
+    // "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+    "markdown-preview-enhanced.frontMatterRenderingOption": "code block",
+    "markdown-preview-enhanced.previewTheme": "atom-material.css",
+    "markdown.extension.list.indentationSize": "inherit", // important
+    "markdown.preview.fontSize": 16,
+    "markdown.updateLinksOnFileMove.enabled": "prompt",
+    "markdownlint.config": {
+        "MD007": {
+            "indent": 4
+        },
+        "MD041": false,
+        "MD047": false,
+        "no-hard-tabs": true
+    },
+    "material-icon-theme.hidesExplorerArrows": true,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.fontSize": 18,
+    "window.autoDetectColorScheme": true,
+    "window.commandCenter": true,
+    "window.restoreWindows": "one",
+    "workbench.colorTheme": "Dracula Soft",
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.editorAssociations": {
+        "*.md": "default",
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.preferredDarkColorTheme": "Night Owl",
+    // "workbench.preferredLightColorTheme": "Atom One Light",
+    "workbench.startupEditor": "newUntitledFile",
+
+    "vim.disableExtension": false,
+    "vim.easymotion": true,
+    // "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.smartRelativeLine": true,
+    // "vim.startInInsertMode": true,
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-n>": false
+    },
+    "vim.autoSwitchInputMethod.enable": true,
+    "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",  // notice
+    "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",    // need install
+    "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
+}

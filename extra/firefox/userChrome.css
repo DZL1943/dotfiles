@@ -1,0 +1,41 @@
+/* https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules#hide-top-bar-and-move-close-minimize-restore-buttons-to-top-left-macos-big-sur-firefox-89 */
+#titlebar {
+    appearance: none !important;
+    height: 0px;
+}
+
+#titlebar > #toolbar-menubar {
+    margin-top: 0px;
+}
+
+#TabsToolbar {
+    min-width: 0 !important;
+    min-height: 0 !important;
+}
+
+#TabsToolbar > .titlebar-buttonbox-container {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 0px;
+}
+
+/* https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules#auto-showhide-sidebar-by-mouseover-hover */
+/*Collapse in default state and add transition*/
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
+    overflow: hidden;
+    min-width: 40px !important;
+    max-width: 40px !important;
+    transition: all 0.2s ease;
+    border-right: 1px solid #0c0c0d;
+    z-index: 2;
+}
+
+/*Expand to 260px on hover*/
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]:hover,
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]
+    #sidebar {
+    min-width: 260px !important;
+    max-width: 260px !important;
+    z-index: 1;
+}
