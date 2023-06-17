@@ -11,7 +11,7 @@
     },
     "editor.cursorBlinking": "expand",
     "editor.detectIndentation": true,
-    "editor.fontSize": 18,
+    "editor.fontSize": 20,
     "editor.guides.bracketPairs": "active",
     "editor.minimap.autohide": true,
     "editor.minimap.enabled": false,
