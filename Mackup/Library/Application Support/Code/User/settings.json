@@ -43,7 +43,7 @@
     "material-icon-theme.hidesExplorerArrows": true,
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.fontSize": 18,
-    "window.autoDetectColorScheme": true,
+    "window.autoDetectColorScheme": false,
     "window.commandCenter": true,
     "window.restoreWindows": "one",
     "workbench.colorTheme": "Dracula Soft",
@@ -56,6 +56,7 @@
     // "workbench.preferredLightColorTheme": "Atom One Light",
     "workbench.startupEditor": "newUntitledFile",
 
+    // 启动连按 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
     "vim.disableExtension": false,
     "vim.easymotion": true,
     // "vim.leader": "<space>",
