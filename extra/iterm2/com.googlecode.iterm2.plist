@@ -1344,6 +1344,8 @@
 	<false/>
 	<key>StatusBarPosition</key>
 	<integer>1</integer>
+	<key>TabStyleWithAutomaticOption</key>
+	<integer>6</integer>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 </dict>
