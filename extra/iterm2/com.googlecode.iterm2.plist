@@ -4,16 +4,6 @@
 <dict>
 	<key>AlternateMouseScroll</key>
 	<true/>
-	<key>AppleAntiAliasingThreshold</key>
-	<integer>1</integer>
-	<key>ApplePressAndHoldEnabled</key>
-	<false/>
-	<key>AppleScrollAnimationEnabled</key>
-	<integer>0</integer>
-	<key>AppleSmoothFixedFontsSizeThreshold</key>
-	<integer>1</integer>
-	<key>AppleWindowTabbingMode</key>
-	<string>manual</string>
 	<key>Default Bookmark Guid</key>
 	<string>6D9A7C79-7FBC-4D83-98F1-CD7659C7831D</string>
 	<key>HapticFeedbackForEsc</key>
@@ -1331,11 +1321,31 @@
 	<array>
 		<dict>
 			<key>guid</key>
+			<string>0F26932B-42B3-46B7-AA87-0CF0205B5217</string>
+			<key>title</key>
+			<string>gcam</string>
+			<key>value</key>
+			<string>git status &amp;&amp; git add -A &amp;&amp; git commit -m "auto commit - $(date +%F)" &amp;&amp; git --no-pager log --oneline</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>guid</key>
 			<string>5F388F43-3630-48A4-82A9-B8AF57242136</string>
 			<key>title</key>
 			<string>rsync ob</string>
 			<key>value</key>
-			<string>rsync -avh --delete --exclude={'.git/','.trash/'} ~/Workspace/Obsidian ~/bak</string>
+			<string>rsync -avh --delete --exclude={'.git/','.trash/'} ~/Documents/Obsidian ~/bak</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>guid</key>
+			<string>75952936-F17A-4CD6-B643-9151C1894A68</string>
+			<key>title</key>
+			<string>zip ob</string>
+			<key>value</key>
+			<string>pushd ~/bak &amp;&amp; zip -r Obsidian-$(date +%Y%m%d%H%M%S).zip Obsidian &amp;&amp; ls -l &amp;&amp; popd</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
