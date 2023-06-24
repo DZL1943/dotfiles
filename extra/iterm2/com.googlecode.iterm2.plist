@@ -1345,7 +1345,9 @@
 			<key>title</key>
 			<string>zip ob</string>
 			<key>value</key>
-			<string>pushd ~/bak &amp;&amp; zip -r Obsidian-$(date +%Y%m%d%H%M%S).zip Obsidian &amp;&amp; ls -l &amp;&amp; popd</string>
+			<string>cd ~/bak \
+&amp;&amp; DATE=$(date +%s) &amp;&amp; zip -r "Obsidian-$DATE.zip" Obsidian -P "Obsidian-$(date -r $DATE '+%Y%m%d%H%M%S')" \
+&amp;&amp; ls -l &amp;&amp; cd -</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
