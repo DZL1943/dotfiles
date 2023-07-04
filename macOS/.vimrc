@@ -83,6 +83,7 @@ let g:coc_global_extensions = [
             \'coc-highlight',
             \'coc-sh',
             \'coc-rust-analyzer',
+            \'coc-metals',
             \]
 
 " Use tab for trigger completion with characters ahead and navigate.
