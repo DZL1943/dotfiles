@@ -53,6 +53,11 @@ autocmd BufWritePost $MYVIMRC source $MYVIMRC
 filetype plugin on
 au VimEnter,BufNewFile,BufRead * if &ft == '' && @% == '' | set ft=markdown | endif
 
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
+let g:netrw_winsize = 25
+let g:netrw_browse_split = 4
+autocmd VimEnter * if argc() <= 1 | Vexplore | endif
 
 call plug#begin()
 Plug 'vim-airline/vim-airline'
