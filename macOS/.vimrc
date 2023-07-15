@@ -55,9 +55,10 @@ au VimEnter,BufNewFile,BufRead * if &ft == '' && @% == '' | set ft=markdown | en
 
 let g:netrw_liststyle = 3
 let g:netrw_banner = 0
-let g:netrw_winsize = 25
+let g:netrw_winsize = 20
 let g:netrw_browse_split = 4
 autocmd VimEnter * if argc() <= 1 | Vexplore | endif
+autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw" || &buftype == 'quickfix' |q|endif
 
 call plug#begin()
 Plug 'vim-airline/vim-airline'
