@@ -1,29 +1,44 @@
-                                        ; -*- coding: utf-8 -*-
-
+;; ========== package and source config
 (setq package-archives '(
-                         ("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
-                         ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-                         ;; ("melpa" . "https://melpa.org/packages/")
-                         ;; ("melpa-stable" . "https://stable.melpa.org/packages/")
-                         ))
-;; tips: package-refresh-contents
-(package-initialize)
+  ("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+  ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+))
+
+(when (version< emacs-version "27.0")
+  (package-initialize))
+
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp/"))
 
-(setq default-directory "~/org/")
+;; (setq default-directory "~/org/")
 ;; (setq user-full-name "user")
 ;; (setq user-mail-address "user@mail.com")
 
+;; ========== basic config
 (setq debug-on-error t)
+;; 跳过起始界面
 (setq inhibit-startup-message t)
+;; 清除 scrach 信息
 (setq initial-scratch-message nil)
+;; 将默认模式更改为纯文本
+;; (setq initial-major-mode 'text-mode)
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq ring-bell-function 'ignore
       visible-bell nil)
 (setq help-window-select 't)
+(ido-mode t)
+(global-auto-revert-mode t)
+(setq make-backup-files nil)
+(setq auto-save-default nil)
+(recentf-mode t)
+(setq recentf-max-menu-items 25)
+(setq recentf-max-saved-items 25)
+(global-set-key (kbd "C-x C-r") 'recentf-open-files)
 
-(setq initial-major-mode 'text-mode)
-(add-hook 'text-mode-hook (lambda () (text-scale-increase 2)))
+(show-paren-mode t)  ;; default t
+(electric-pair-mode t)
+(delete-selection-mode 1)  ;; ?
+;; (cua-mode t)
+(setq track-eol t)
 
 ;; (prefer-coding-system 'cp950)
 ;; (prefer-coding-system 'gb2312)
@@ -48,25 +63,21 @@
 ;;(add-to-list 'file-coding-system-alist '("\\.org\\'" . utf-8))
 
 (if (version<= "26.0.50" emacs-version)
-    ;; (progn
-    ;;   (global-display-line-numbers-mode)
-    ;;   (setq-default display-line-numbers-type 'relative)
-    ;;   (setq-default display-line-numbers-width 2))
-    (global-linum-mode t))
-
-;; (set-face-background 'line-number "#2D3743")
-;; (set-face-foreground 'line-number-current-line "yellow")
+  ;; (progn
+  ;;   (global-display-line-numbers-mode)
+  ;;   (setq-default display-line-numbers-type 'relative)
+  ;;   (setq-default display-line-numbers-width 2)
+  ;;   (set-face-background 'line-number "#2D3743")
+  ;;   (set-face-foreground 'line-number-current-line "yellow")
+  ;; )
+  (progn
+    (global-linum-mode t)
+    (eval-after-load 'hideshow '(define-key hs-minor-mode-map [left-margin mouse-1] 'hs-toggle-hiding))
+  )
+)
 ;; (global-hl-line-mode t)
 (setq column-number-mode t)
 ;; (add-hook 'window-configuration-change-hook (lambda () (ruler-mode 1)))
-
-(setq track-eol t)
-(delete-selection-mode 1)
-(show-paren-mode t)
-(electric-pair-mode t)
-(ido-mode t)
-;; (cua-mode t)
-
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
 (setq-default fill-column 80)
@@ -76,17 +87,62 @@
 (add-hook 'prog-mode-hook 'hs-minor-mode)
 ;; (setq hs-hide-comments nil)
 ;; (setq hs-isearch-open 'x)
-(eval-after-load 'hideshow
-  '(define-key hs-minor-mode-map [left-margin mouse-1] 'hs-toggle-hiding))
 
-(global-auto-revert-mode 1)
-(setq make-backup-files nil)
-(setq auto-save-default nil)
-(recentf-mode 1)
-(setq recentf-max-menu-items 25)
-(setq recentf-max-saved-items 25)
-(global-set-key (kbd "C-x C-r") 'recentf-open-files)
+;; ========== display config
+(if (window-system)
+  (progn
+    (setq default-frame-alist `(
+      (vertical-scroll-bars . nil)
+      (tool-bar-lines . 0)
+      (menu-bar-lines . 1)
+      (mouse-wheel-frame . t)
+      (cursor-type . bar)
+      (cursor-color . "green")
+    ))
+    (setq initial-frame-alist `(
+      (top . 20) (left . 150)
+      ;; (width . 92) (height . ,(/ (- (x-display-pixel-height) 140) (frame-char-height)))
+      (width . (text-pixels . ,(round (* (x-display-pixel-width) 0.72)))) (height . (text-pixels . ,(round (* (x-display-pixel-height) 0.84))))
+    ))
+    (when (eq system-type 'darwin)
+      ;; bugfix
+      (setq image-types (cons 'svg image-types))
+      (set-face-attribute 'default nil :height 180)
+      (set-fontset-font t 'symbol (font-spec :family "Apple Color Emoji") nil 'prepend)
+      (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
+      (add-to-list 'default-frame-alist '(ns-appearance . dark))
+    )
+    ;; (when (eq system-type 'windows-nt)
+    ;;   (setq fonts '("Consolas" "微软雅黑"))
+    ;;   (set-fontset-font t 'unicode "Segoe UI Emoji" nil 'prepend)
+    ;;   (set-face-attribute 'default nil :font
+    ;;                       (format "%s:pixelsize=%d" (car fonts) 24)))
+    ;; (when (eq system-type 'gnu/linux)
+    ;;   (setq fonts '("SF Mono" "Noto Sans Mono CJK SC"))
+    ;;   (set-fontset-font t 'unicode "Noto Color Emoji" nil 'prepend)
+    ;;   (set-face-attribute 'default nil :font
+    ;;                       (format "%s:pixelsize=%d" (car fonts) 24)))
+    (load-theme 'misterioso' t)
+    (set-face-attribute 'region nil :background "#6B8E23" :foreground "white")
 
+    (global-tab-line-mode 1)
+    (set-face-attribute 'tab-line nil :background "#2D3743" :foreground "white" :box nil)
+    (set-face-attribute 'tab-line-tab-inactive nil :background "#2D3743" :foreground "white" :box nil)
+    (set-face-attribute 'tab-line-tab-current nil :background "white" :foreground "blue" :box nil)
+
+    (set-frame-parameter nil 'alpha 85)
+    (add-hook 'text-mode-hook (lambda () (text-scale-increase 2)))
+  )
+  (progn
+    ;; (xterm-mouse-mode 1)
+    (mouse-wheel-mode 1)
+    (menu-bar-mode -1)
+    (global-hl-line-mode -1)
+    (load-theme 'tango-dark' t)
+  )
+)
+
+;; ========== other
 ;; (setq scroll-margin 3
 ;;       scroll-step 1
 ;;       scroll-conservatively 10000)
@@ -123,57 +179,7 @@
 ;; toggle transparency
 (global-set-key (kbd "C-c 0") (lambda()(interactive)(set-frame-parameter nil 'alpha (if (equal (frame-parameter nil 'alpha) 85) 100 85))))
 
-(if (not window-system)
-    (progn
-      ;; (xterm-mouse-mode 1)
-      (mouse-wheel-mode 1)
-      (menu-bar-mode -1)
-      (global-hl-line-mode -1)
-      (load-theme 'tango-dark' t)
-      )
-  (progn
-    (tool-bar-mode -1)
-    ;; (scroll-bar-mode -1)
-    (menu-bar-mode 1)
-    ;; replaced by centaur-tabs
-    (global-tab-line-mode 1)
-    (set-face-attribute 'tab-line nil :background "#2D3743" :foreground "white" :box nil)
-    (set-face-attribute 'tab-line-tab-inactive nil :background "#2D3743" :foreground "white" :box nil)
-    (set-face-attribute 'tab-line-tab-current nil :background "white" :foreground "blue" :box nil)
-    (when (eq system-type 'darwin)
-      (set-face-attribute 'default nil :height 180)
-      (set-fontset-font t 'symbol (font-spec :family "Apple Color Emoji") nil 'prepend))
-    ;; (when (eq system-type 'windows-nt)
-    ;;   (setq fonts '("Consolas" "微软雅黑"))
-    ;;   (set-fontset-font t 'unicode "Segoe UI Emoji" nil 'prepend)
-    ;;   (set-face-attribute 'default nil :font
-    ;;                       (format "%s:pixelsize=%d" (car fonts) 24)))
-    ;; (when (eq system-type 'gnu/linux)
-    ;;   (setq fonts '("SF Mono" "Noto Sans Mono CJK SC"))
-    ;;   (set-fontset-font t 'unicode "Noto Color Emoji" nil 'prepend)
-    ;;   (set-face-attribute 'default nil :font
-    ;;                       (format "%s:pixelsize=%d" (car fonts) 24)))
-    (setq initial-frame-alist `(
-                                (vertical-scroll-bars . nil)
-                                (tool-bar-lines . 0)
-                                (menu-bar-lines . 1)
-                                (mouse-wheel-frame . t)
-                                (cursor-type . bar)
-                                (cursor-color . "green")
-                                (top . 20) (left . 150)
-                                ;; (width . 92) (height . ,(/ (- (x-display-pixel-height) 140) (frame-char-height)))
-                                (width . (text-pixels . ,(round (* (x-display-pixel-width) 0.72)))) (height . (text-pixels . ,(round (* (x-display-pixel-height) 0.84))))
-                                ))
-    (message "%s" default-frame-alist)
-
-    (when (eq system-type 'darwin)
-      (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
-      (add-to-list 'default-frame-alist '(ns-appearance . dark)))
-    (load-theme 'misterioso' t)
-    (set-frame-parameter nil 'alpha 85)
-    (set-face-attribute 'region nil :background "#6B8E23" :foreground "white")))
-
-
+;; org
 (with-eval-after-load 'org
   (setq org-adapt-indentation nil)
   (setq org-src-fontify-natively t)
@@ -200,7 +206,7 @@
   (define-key comint-mode-map (kbd "<up>") 'comint-previous-input)
   (define-key comint-mode-map (kbd "<down>") 'comint-next-input))
 
-
+;; ========== plugin config
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package)
@@ -541,8 +547,6 @@
   (interactive)
   (local-set-key (kbd "<tab>") 'tab-region)
   (local-set-key (kbd "<backtab>") 'untab-region))
-
-;; (add-hook 'prog-mode-hook 'my/hack-tab-key)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
