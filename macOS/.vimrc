@@ -60,9 +60,9 @@ let g:netrw_browse_split = 4
 
 augroup netrw
     au!
-    autocmd VimEnter * if argc() <= 1 | Vexplore | endif
-    autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw" || &buftype == 'quickfix' |q|endif
+    autocmd VimEnter * if argc() <= 1 | Lexplore | endif
     autocmd VimEnter * wincmd l
+    autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw" || &buftype == 'quickfix' |q|endif
 augroup end
 
 call plug#begin()
