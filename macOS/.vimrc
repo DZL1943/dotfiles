@@ -41,7 +41,7 @@ set wrap
 set whichwrap=b,s,<,>,[,]
 set wildmenu
 set ls=2
-set acd
+"set acd
 set showtabline=1
 set clipboard^=unnamed,unnamedplus
 
