@@ -56,14 +56,14 @@ au VimEnter,BufNewFile,BufRead * if &ft == '' && @% == '' | set ft=markdown | en
 let g:netrw_liststyle = 3
 let g:netrw_banner = 0
 let g:netrw_winsize = 20
-let g:netrw_browse_split = 4
+"let g:netrw_browse_split = 4
 "let g:netrw_altv=1
 let g:netrw_keepdir = 0
 let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
 
 augroup netrw
     au!
-    autocmd VimEnter * if argc() <= 1 | Lexplore | endif
+    autocmd VimEnter * if argc() == 1 | Lexplore | endif
     autocmd VimEnter * wincmd l
     autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw" || &buftype == 'quickfix' |q|endif
 augroup end
