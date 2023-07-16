@@ -17,7 +17,7 @@
 (setq debug-on-error t)
 ;; 跳过起始界面
 (setq inhibit-startup-message t)
-;; 清除 scrach 信息
+;; 清除 scratch 信息
 (setq initial-scratch-message nil)
 ;; 将默认模式更改为纯文本
 ;; (setq initial-major-mode 'text-mode)
