@@ -6,6 +6,8 @@ zsh:
     ~/.env: .env
     ~/.alias: .alias
 fish:
+  files:
+    ~/.config/fish/config.fish: config.fish
 vim:
   files:
     ~/.vimrc: .vimrc
