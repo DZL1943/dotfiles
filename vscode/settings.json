@@ -1,0 +1,127 @@
+{
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "[lisp]": {
+        "editor.tabSize": 2
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+        "editor.tabSize": 4
+    },
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.clearPreviousOutput": true,
+    "editor.cursorBlinking": "expand",
+    "editor.detectIndentation": true,
+    "editor.fontSize": 20,
+    "editor.guides.bracketPairs": "active",
+    // "editor.insertSpaces": true,
+    "editor.linkedEditing": true,
+    "editor.minimap.autohide": true,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.stickyTabStops": true,
+    "editor.wordWrap": "on",
+    "explorer.autoReveal": false,
+    "explorer.confirmDelete": false,
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "files.autoGuessEncoding": true,
+    "files.defaultLanguage": "markdown",
+    "files.exclude": {
+        "**/.trash": true
+    },
+    // "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+    "markdown-preview-enhanced.frontMatterRenderingOption": "code block",
+    "markdown-preview-enhanced.previewTheme": "atom-material.css",
+    "markdown.extension.list.indentationSize": "inherit", // important
+    "markdown.preview.fontSize": 16,
+    "markdown.updateLinksOnFileMove.enabled": "prompt",
+    "markdownlint.config": {
+        "MD007": {
+            "indent": 4
+        },
+        "MD031": false,
+        "MD041": false,
+        "MD045": false,
+        "MD047": false,
+        "no-hard-tabs": true
+    },
+    "material-icon-theme.hidesExplorerArrows": true,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.fontSize": 18,
+    "window.autoDetectColorScheme": false,
+    "window.restoreWindows": "one",
+    "window.titleBarStyle": "native",
+    "workbench.editorAssociations": {},
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.preferredDarkColorTheme": "Night Owl",
+    // "workbench.preferredLightColorTheme": "Atom One Light",
+    "workbench.startupEditor": "newUntitledFile",
+
+    // 启动连按 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+    "vim.disableExtension": false,
+    "vim.easymotion": true,
+    // "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.smartRelativeLine": true,
+    // "vim.startInInsertMode": true,
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-n>": false
+    },
+    "vim.autoSwitchInputMethod.enable": true,
+    "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
+    "vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
+    "vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
+    "vim.whichwrap": "b,s,<,>,[,]",
+    "redhat.telemetry.enabled": false,
+    "editor.accessibilitySupport": "off",
+    "livePreview.customExternalBrowser": "Edge",
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "terminal.integrated.inheritEnv": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "apc.electron": {
+        "frame": false,
+        "titleBarStyle": "hiddenInset",
+        "opacity": 0.9,
+        "transparent": true,  // no effect
+        "vibrancy": "ultra-dark",  // no effect
+        "visualEffectState": "active",  // no effect
+        "trafficLightPosition": {
+          "x": 7,
+          "y": 5
+        }
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.colorTheme": "Dracula Soft",
+    "workbench.editor.empty.hint": "hidden",
+    "window.customTitleBarVisibility": "never",
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.stickyScroll.maxLineCount": 3,
+    "workbench.editor.wrapTabs": true,
+    "ime-and-cursor.EnglishIM": "com.apple.keylayout.ABC",
+    "ime-and-cursor.ChineseIM": "com.sogou.inputmethod.sogou.pinyin",
+    "ime-and-cursor.obtainIMCmd": "/opt/homebrew/bin/im-select",
+    "ime-and-cursor.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
+    // "workbench.colorCustomizations": {
+    //     "editorCursor.foreground": "#FF0000",
+    //     "terminalCursor.foreground": "#FF0000"
+    // },
+    "ime-and-cursor.helpVim": true,
+    "ime-and-cursor.cursorStyle.enable": true,
+    "ime-and-cursor.cursorStyle.English": "Block",
+    "smart-ime.enableChineseSwitchToChinese": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#00FF00",
+    },
+}

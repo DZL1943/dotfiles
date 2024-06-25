@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "d9c96d0f51091dde",
+    "type": "split",
+    "children": [
+      {
+        "id": "e6fc062d1e03afba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "46bbc61860e69445",
+            "type": "leaf",
+            "state": {
+              "type": "vscode-editor",
+              "state": {
+                "file": "main.py"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c8bb9cda0343617f",
+    "type": "split",
+    "children": [
+      {
+        "id": "e93de0b3966fa913",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8d8893d561ab788b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c977d589b7118ed8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a6fae1cf0ae0a586",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "85f6ff27a037d542",
+    "type": "split",
+    "children": [
+      {
+        "id": "297ef271baed4074",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f93204f47d75622f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "main.py"
+              }
+            }
+          },
+          {
+            "id": "8a5ae44ab2ac0a36",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "main.py",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d7369a4970a4d6f8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "main.py",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "66f76de4c7008a40",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 246.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian42-brat:BRAT": false,
+      "workspaces:管理工作区布局": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "command-palette:打开命令面板": false,
+      "switcher:打开快速切换": false,
+      "vscode-editor:新建代码文件": true,
+      "fuzzy-chinese-pinyin:FuzzySearch": true
+    }
+  },
+  "active": "46bbc61860e69445",
+  "lastOpenFiles": [
+    ".gitignore.swp",
+    "iterm2/.com.googlecode.iterm2.plist.swp",
+    ".toolset.yaml.swp",
+    "iterm2/com.googlecode.iterm2.plist",
+    "iterm2/Profiles.json",
+    "iterm2",
+    "zsh/.alias~",
+    "zsh/.env~",
+    "zsh/.zshrc~",
+    "zsh/.zprofile~",
+    "vim/.vimrc~",
+    "README.md",
+    "git/git.md",
+    "obsidian/Obsidian插件.md",
+    "linux/diff.md",
+    "macosx/applist.md",
+    "macosx/文件管理.md",
+    "linux/jq.md",
+    "macosx/macOS安装设置.md",
+    "Local/temp.md"
+  ]
+}
