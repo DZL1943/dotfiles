@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "e6fc062d1e03afba",
+        "id": "14c53bb083ae5c22",
         "type": "tabs",
         "children": [
           {
-            "id": "46bbc61860e69445",
+            "id": "ab03dfbec85af66f",
             "type": "leaf",
             "state": {
-              "type": "vscode-editor",
+              "type": "markdown",
               "state": {
-                "file": "main.py"
+                "file": "applist.md",
+                "mode": "preview",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "main.py"
+                "file": "applist.md"
               }
             }
           },
@@ -93,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "main.py",
+                "file": "applist.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "main.py",
+                "file": "applist.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +146,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian42-brat:BRAT": false,
       "workspaces:管理工作区布局": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -154,8 +155,12 @@
       "fuzzy-chinese-pinyin:FuzzySearch": true
     }
   },
-  "active": "46bbc61860e69445",
+  "active": "ab03dfbec85af66f",
   "lastOpenFiles": [
+    "toolset.yaml",
+    "applist.md",
+    "README.md",
+    "main.py",
     ".gitignore.swp",
     "iterm2/.com.googlecode.iterm2.plist.swp",
     ".toolset.yaml.swp",
@@ -165,9 +170,6 @@
     "zsh/.alias~",
     "zsh/.env~",
     "zsh/.zshrc~",
-    "zsh/.zprofile~",
-    "vim/.vimrc~",
-    "README.md",
     "git/git.md",
     "obsidian/Obsidian插件.md",
     "linux/diff.md",
