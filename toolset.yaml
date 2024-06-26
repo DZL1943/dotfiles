@@ -16,12 +16,15 @@ emacs:
     ~/.emacs.d/init.el: init.el
 vscode:
   files:
-    ~/Library/Application\ Support/Code/User/settings.json: settings.json
-    ~/Library/Application\ Support/Code/User/keybindings.json: keybindings.json
+    "~/Library/Application Support/Code/User/settings.json": settings.json
+    "~/Library/Application Support/Code/User/keybindings.json": keybindings.json
+rime:
+  files:
+    ~/Library/Rime/.: ''
 iterm2:
   files:
     ~/Library/Preferences/com.googlecode.iterm2.plist: com.googlecode.iterm2.plist
-    ~/Library/Application\ Support/iTerm2/DynamicProfiles/Profiles.json: Profiles.json
+    "~/Library/Application Support/iTerm2/DynamicProfiles/Profiles.json": Profiles.json
 alacritty:
   files:
     ~/.config/alacritty/alacritty.yml: alacritty.yml
@@ -47,6 +50,6 @@ hammerspoon:
 sleepwatcher:
   files:
     ~/.sleep: .sleep
-rime:
+mac-mouse-fix:
   files:
-    ~/Library/Rime/.: ''
+    "~/Library/Application Support/com.nuebling.mac-mouse-fix/config.plist": config.plist
