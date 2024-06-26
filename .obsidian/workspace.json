@@ -8,18 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0f8517cdb9f84405",
+            "id": "998aa645466a38f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "applist.md",
+                "file": "homebrew/Homebrew.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0206df4d68c24453",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "macosx/macOS安装设置.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "applist.md"
+                "file": "macosx/macOS安装设置.md"
               }
             }
           },
@@ -95,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "applist.md",
+                "file": "macosx/macOS安装设置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "applist.md",
+                "file": "macosx/macOS安装设置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,27 +168,31 @@
       "fuzzy-chinese-pinyin:FuzzySearch": true
     }
   },
-  "active": "0f8517cdb9f84405",
+  "active": "8d8893d561ab788b",
   "lastOpenFiles": [
-    "README.md",
+    "homebrew/Homebrew.md",
+    "macosx/文件管理.md",
+    "kopia/Kopia.md",
+    "macosx/macOS安装设置.md",
+    "applist.md",
+    "homebrew/.Brewfile.swp",
+    "homebrew/Brewfile",
+    "Brewfile",
+    ".gitignore.swp",
+    ".trash/markdown.md",
+    "markdown.md",
     "toolset.yaml",
+    "README.md",
     "backup.sh",
     ".trash/restore.sh",
     ".trash/install 3.sh",
     ".trash/backup.sh",
     "rust/install.sh",
-    ".trash/installed-extensions",
-    ".trash/install 2.sh",
-    "homebrew/install.sh",
-    ".trash/Brewfile",
-    "applist.md",
     "git/git.md",
     "obsidian/Obsidian插件.md",
     "linux/diff.md",
     "macosx/applist.md",
-    "macosx/文件管理.md",
     "linux/jq.md",
-    "macosx/macOS安装设置.md",
     "Local/temp.md"
   ]
 }
