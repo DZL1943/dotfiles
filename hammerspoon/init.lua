@@ -35,7 +35,7 @@ function obj:start()
     -- obj:_setupAppLauncher()
     obj:_setupWindowManager()
     obj:_toggleClock(true)
-    obj:_setupCaffeinateWatcher()
+    -- obj:_setupCaffeinateWatcher()
     -- obj:_mousetap()
     return self
 end

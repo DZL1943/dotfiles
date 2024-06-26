@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "14c53bb083ae5c22",
+        "id": "619b050d43aaec06",
         "type": "tabs",
         "children": [
           {
-            "id": "ab03dfbec85af66f",
+            "id": "0f8517cdb9f84405",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -155,21 +155,20 @@
       "fuzzy-chinese-pinyin:FuzzySearch": true
     }
   },
-  "active": "ab03dfbec85af66f",
+  "active": "0f8517cdb9f84405",
   "lastOpenFiles": [
-    "toolset.yaml",
-    "applist.md",
     "README.md",
-    "main.py",
-    ".gitignore.swp",
-    "iterm2/.com.googlecode.iterm2.plist.swp",
-    ".toolset.yaml.swp",
-    "iterm2/com.googlecode.iterm2.plist",
-    "iterm2/Profiles.json",
-    "iterm2",
-    "zsh/.alias~",
-    "zsh/.env~",
-    "zsh/.zshrc~",
+    "toolset.yaml",
+    "backup.sh",
+    ".trash/restore.sh",
+    ".trash/install 3.sh",
+    ".trash/backup.sh",
+    "rust/install.sh",
+    ".trash/installed-extensions",
+    ".trash/install 2.sh",
+    "homebrew/install.sh",
+    ".trash/Brewfile",
+    "applist.md",
     "git/git.md",
     "obsidian/Obsidian插件.md",
     "linux/diff.md",
