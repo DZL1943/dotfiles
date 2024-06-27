@@ -29,19 +29,8 @@
               },
               "pinned": true
             }
-          },
-          {
-            "id": "d5866abdff140355",
-            "type": "leaf",
-            "state": {
-              "type": "vscode-editor",
-              "state": {
-                "file": "main.py"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "main.py"
+                "file": "Linux/Linux-Commands.md"
               }
             }
           },
@@ -117,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "main.py",
+                "file": "Linux/Linux-Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "main.py",
+                "file": "Linux/Linux-Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +167,7 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "d5866abdff140355",
+  "active": "0f2e43341cac543a",
   "lastOpenFiles": [
     "Linux/Linux-Commands.md",
     "Linux/Linux-Tips.md",
