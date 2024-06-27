@@ -4,30 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "619b050d43aaec06",
+        "id": "a2498818b0f020d9",
         "type": "tabs",
         "children": [
           {
-            "id": "998aa645466a38f9",
+            "id": "8ea954cf693a55b8",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "homebrew/Homebrew.md",
-                "mode": "preview",
-                "source": false
-              }
+                "file": "Linux/Linux-Commands.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false
+                  ]
+                }
+              },
+              "pinned": true
             }
           },
           {
-            "id": "0206df4d68c24453",
+            "id": "80634cf8a49bc2c0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "macosx/macOS安装设置.md",
+                "file": "Linux/Linux-Tips.md",
                 "mode": "preview",
-                "source": false
+                "source": true
               }
             }
           }
@@ -98,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "macosx/macOS安装设置.md"
+                "file": "Linux/Linux-Tips.md"
               }
             }
           },
@@ -108,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "macosx/macOS安装设置.md",
+                "file": "Linux/Linux-Tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "macosx/macOS安装设置.md",
+                "file": "Linux/Linux-Tips.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,34 +176,47 @@
       "command-palette:打开命令面板": false,
       "switcher:打开快速切换": false,
       "vscode-editor:新建代码文件": true,
-      "fuzzy-chinese-pinyin:FuzzySearch": true
+      "fuzzy-chinese-pinyin:FuzzySearch": true,
+      "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "8d8893d561ab788b",
+  "active": "80634cf8a49bc2c0",
   "lastOpenFiles": [
-    "homebrew/Homebrew.md",
-    "macosx/文件管理.md",
-    "kopia/Kopia.md",
-    "macosx/macOS安装设置.md",
-    "applist.md",
-    "homebrew/.Brewfile.swp",
-    "homebrew/Brewfile",
-    "Brewfile",
-    ".gitignore.swp",
-    ".trash/markdown.md",
-    "markdown.md",
-    "toolset.yaml",
-    "README.md",
-    "backup.sh",
-    ".trash/restore.sh",
-    ".trash/install 3.sh",
-    ".trash/backup.sh",
-    "rust/install.sh",
-    "git/git.md",
-    "obsidian/Obsidian插件.md",
-    "linux/diff.md",
-    "macosx/applist.md",
-    "linux/jq.md",
-    "Local/temp.md"
+    ".trash/Shell-Tips.md",
+    "Linux/Shell-Tips.md",
+    "Linux/Linux-Tips.md",
+    ".trash/Linux文件目录类命令.md",
+    "Linux/Linux文件目录类命令.md",
+    "Linux/常用命令替代.md",
+    ".trash/Linux-Commands.md",
+    "Linux/Linux-Commands.md",
+    "Linux/Linux-Commands.md",
+    ".trash/Shell命令.md",
+    "Linux/Shell命令.md",
+    ".trash/rsync.md",
+    "Linux/rsync.md",
+    ".trash/nohup.md",
+    "Linux/nohup.md",
+    ".trash/ps.md",
+    ".trash/sed.md",
+    ".trash/tar.md",
+    ".trash/tee.md",
+    ".trash/zip.md",
+    ".trash/ls.md",
+    ".trash/ln.md",
+    ".trash/grep.md",
+    ".trash/fzf.md",
+    ".trash/find.md",
+    ".trash/date.md",
+    "Core/Ansible",
+    "Core/Docker",
+    "config.yaml",
+    "macOS/iTerm/com.googlecode.iterm2.plist",
+    "macOS/iTerm/Profiles.json",
+    "macOS/iTerm",
+    ".trash/macosx 2.sh",
+    ".trash/installed-extensions 2",
+    ".trash/install 3 2.sh",
+    ".trash/install 2 2.sh"
   ]
 }

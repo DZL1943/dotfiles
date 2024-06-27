@@ -1,0 +1,58 @@
+bash:
+zsh:
+  files:
+    ~/.zprofile: Core/Shell/.zprofile
+    ~/.zshrc: Core/Shell/.zshrc
+    ~/.env: Core/Shell/.env
+    ~/.alias: Core/Shell/.alias
+fish:
+  files:
+    ~/.config/fish/config.fish: Core/Shell/config.fish
+vim:
+  files:
+    ~/.vimrc: Core/Vim/.vimrc
+emacs:
+  files:
+    ~/.emacs.d/init.el: Core/Emacs/init.el
+vscode:
+  files:
+    "~/Library/Application Support/Code/User/settings.json": Core/VSCode/settings.json
+    "~/Library/Application Support/Code/User/keybindings.json": Core/VSCode/keybindings.json
+rime:
+  files:
+    ~/Library/Rime/.: Extra/Rime/
+iterm2:
+  files:
+    ~/Library/Preferences/com.googlecode.iterm2.plist: macOS/iTerm/com.googlecode.iterm2.plist
+    "~/Library/Application Support/iTerm2/DynamicProfiles/Profiles.json": macOS/iTerm/Profiles.json
+alacritty:
+  files:
+    ~/.config/alacritty/alacritty.yml: Core/Alacritty/alacritty.yml
+tmux:
+  files:
+    ~/.tmux.conf: Core/Tmux/.tmux.conf
+git:
+  files:
+    ~/.gitconfig: Core/Git/.gitconfig
+nodejs:
+  files:
+    ~/.npmrc: Core/JavaScript/.npmrc
+pip:
+  files:
+    ~/.config/pip/pip.conf: Core/Python/pip.conf
+conda:
+  files:
+    ~/.condarc: Core/Python/.condarc
+cargo:
+  files:
+    ~/.cargo/config: Core/Rust/config
+hammerspoon:
+  files:
+    ~/.hammerspoon/init.lua: macOS/Hammerspoon/init.lua
+sleepwatcher:
+  files:
+    ~/.sleep: macOS/SleepWatcher/.sleep
+    ~/.wakeup: macOS/SleepWatcher/.wakeup
+mac-mouse-fix:
+  files:
+    "~/Library/Application Support/com.nuebling.mac-mouse-fix/config.plist": macOS/Mac-Mouse-Fix/config.plist

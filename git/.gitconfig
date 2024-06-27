@@ -1,8 +1,0 @@
-[core]
-	quotepath = false
-	ignorecase = false
-[push]
-	autoSetupRemote = true
-[init]
-	defaultBranch = main
-[user]
