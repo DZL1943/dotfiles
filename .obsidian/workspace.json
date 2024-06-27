@@ -29,8 +29,21 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "a33d11f1621fa006",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "软件列表.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Linux-Commands.md"
+                "file": "软件列表.md"
               }
             }
           },
@@ -106,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux-Commands.md",
+                "file": "软件列表.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Linux-Commands.md",
+                "file": "软件列表.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,16 +180,23 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "8ea954cf693a55b8",
+  "active": "a33d11f1621fa006",
   "lastOpenFiles": [
+    "macOS/FUSE-T/FUSE-T.md",
+    "Extra/Scrcpy",
+    "Extra/scrcpy",
+    "Brewfile",
+    "macOS/Homebrew/.Brewfile.swp",
+    "config.yaml",
+    "macOS/FUSE-T",
+    "Linux/Linux-Commands.md",
+    "Core/Espanso",
+    "Extra/Cryptomator",
+    "Extra/OBS",
     "Extra/Firefox/LibreWolf连接KeePassXC.md",
     "Extra/Spotify/Spotify crack.md",
-    "Linux/Linux-Commands.md",
     "Extra/Spotify",
     "Linux/Linux-Tips.md",
-    "macOS/BAB/2024-06-27-16-47-07.BABPreset",
-    "macOS/Raycast/Raycast 2024-06-27 16.35.25.rayconfig",
-    "macOS/Stats/Stats.plist",
     ".trash/Shell-Tips.md",
     "Linux/Shell-Tips.md",
     ".trash/Linux文件目录类命令.md",
@@ -196,14 +216,6 @@
     ".trash/zip.md",
     ".trash/ls.md",
     ".trash/ln.md",
-    ".trash/grep.md",
-    ".trash/fzf.md",
-    ".trash/find.md",
-    "Core/Ansible",
-    "Core/Docker",
-    "config.yaml",
-    "macOS/iTerm/com.googlecode.iterm2.plist",
-    "macOS/iTerm/Profiles.json",
-    "macOS/iTerm"
+    ".trash/grep.md"
   ]
 }

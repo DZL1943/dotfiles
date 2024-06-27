@@ -21,6 +21,7 @@ vscode:
 rime:
   files:
     ~/Library/Rime/.: Extra/Rime/
+espanso:
 iterm2:
   files:
     ~/Library/Preferences/com.googlecode.iterm2.plist: macOS/iTerm/com.googlecode.iterm2.plist
@@ -46,6 +47,8 @@ conda:
 cargo:
   files:
     ~/.cargo/config: Core/Rust/config
+docker:
+ansible:
 hammerspoon:
   files:
     ~/.hammerspoon/init.lua: macOS/Hammerspoon/init.lua
@@ -56,3 +59,4 @@ sleepwatcher:
 mac-mouse-fix:
   files:
     "~/Library/Application Support/com.nuebling.mac-mouse-fix/config.plist": macOS/Mac-Mouse-Fix/config.plist
+obs:
