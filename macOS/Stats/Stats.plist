@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Battery_barChart_position</key>
+	<integer>3</integer>
+	<key>Battery_batteryDetails_position</key>
+	<integer>4</integer>
+	<key>Battery_battery_additional</key>
+	<string>innerPercentage</string>
+	<key>Battery_battery_color</key>
+	<true/>
+	<key>Battery_battery_hideAdditionalWhenFull</key>
+	<true/>
+	<key>Battery_battery_position</key>
+	<integer>0</integer>
+	<key>Battery_color</key>
+	<true/>
+	<key>Battery_label_position</key>
+	<integer>1</integer>
+	<key>Battery_mini_position</key>
+	<integer>2</integer>
+	<key>Battery_notifications_low</key>
+	<string>0.2</string>
+	<key>Battery_state</key>
+	<true/>
+	<key>Battery_widget</key>
+	<string>battery</string>
+	<key>CPU_mini_color</key>
+	<string>monochrome</string>
+	<key>CPU_notifications_totalLoad_state</key>
+	<true/>
+	<key>CPU_notifications_totalLoad_value</key>
+	<integer>90</integer>
+	<key>CPU_updateInterval</key>
+	<integer>5</integer>
+	<key>CPU_updateTopInterval</key>
+	<integer>15</integer>
+	<key>Disk_removable</key>
+	<true/>
+	<key>Disk_updateInterval</key>
+	<integer>60</integer>
+	<key>LaunchAtLoginNext</key>
+	<true/>
+	<key>NSNavLastRootDirectory</key>
+	<string>~/Downloads</string>
+	<key>NSStatusItem Preferred Position Battery_battery</key>
+	<real>141</real>
+	<key>NSStatusItem Preferred Position CPU_mini</key>
+	<real>183</real>
+	<key>NSStatusItem Preferred Position Disk_mini</key>
+	<real>5416</real>
+	<key>NSStatusItem Preferred Position Network_speed</key>
+	<real>230</real>
+	<key>NSStatusItem Preferred Position RAM_mini</key>
+	<real>5463</real>
+	<key>NSStatusItem Preferred Position Sensors_sensors</key>
+	<real>5510</real>
+	<key>NSToolbar Configuration eu.exelban.Stats.Settings.Toolbar</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>1</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<true/>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSWindow Frame NSNavPanelAutosaveName</key>
+	<string>516 552 408 163 0 0 1440 900 </string>
+	<key>Network_speed_icon</key>
+	<string>none</string>
+	<key>Network_speed_monochrome</key>
+	<false/>
+	<key>Network_speed_transparentIcons</key>
+	<true/>
+	<key>RAM_mini_color</key>
+	<string>pressure</string>
+	<key>RAM_notifications_total_state</key>
+	<true/>
+	<key>RAM_notifications_total_value</key>
+	<integer>90</integer>
+	<key>RAM_updateInterval</key>
+	<integer>5</integer>
+	<key>RAM_updateTopInterval</key>
+	<integer>15</integer>
+	<key>Sensors_hid</key>
+	<false/>
+	<key>Sensors_state</key>
+	<true/>
+	<key>Sensors_updateInterval</key>
+	<integer>5</integer>
+	<key>runAtLoginInitialized</key>
+	<true/>
+	<key>sensor_TW0P</key>
+	<true/>
+	<key>setupProcess</key>
+	<true/>
+	<key>telemetry</key>
+	<false/>
+	<key>telemetry_id</key>
+	<string>3E5F5CB1-0533-4220-B85E-17526DA9F6A3</string>
+	<key>updater_check_ts</key>
+	<integer>1719428081</integer>
+	<key>version</key>
+	<string>2.10.18</string>
+</dict>
+</plist>

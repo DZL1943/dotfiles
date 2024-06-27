@@ -31,14 +31,12 @@
             }
           },
           {
-            "id": "80634cf8a49bc2c0",
+            "id": "d5866abdff140355",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "vscode-editor",
               "state": {
-                "file": "Linux/Linux-Tips.md",
-                "mode": "preview",
-                "source": true
+                "file": "main.py"
               }
             }
           }
@@ -109,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Linux-Tips.md"
+                "file": "main.py"
               }
             }
           },
@@ -119,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux-Tips.md",
+                "file": "main.py",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Linux-Tips.md",
+                "file": "main.py",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,17 +178,19 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "80634cf8a49bc2c0",
+  "active": "d5866abdff140355",
   "lastOpenFiles": [
+    "Linux/Linux-Commands.md",
+    "Linux/Linux-Tips.md",
+    "macOS/BAB/2024-06-27-16-47-07.BABPreset",
+    "macOS/Raycast/Raycast 2024-06-27 16.35.25.rayconfig",
+    "macOS/Stats/Stats.plist",
     ".trash/Shell-Tips.md",
     "Linux/Shell-Tips.md",
-    "Linux/Linux-Tips.md",
     ".trash/Linux文件目录类命令.md",
     "Linux/Linux文件目录类命令.md",
     "Linux/常用命令替代.md",
     ".trash/Linux-Commands.md",
-    "Linux/Linux-Commands.md",
-    "Linux/Linux-Commands.md",
     ".trash/Shell命令.md",
     "Linux/Shell命令.md",
     ".trash/rsync.md",
@@ -207,16 +207,12 @@
     ".trash/grep.md",
     ".trash/fzf.md",
     ".trash/find.md",
-    ".trash/date.md",
     "Core/Ansible",
     "Core/Docker",
     "config.yaml",
     "macOS/iTerm/com.googlecode.iterm2.plist",
     "macOS/iTerm/Profiles.json",
     "macOS/iTerm",
-    ".trash/macosx 2.sh",
-    ".trash/installed-extensions 2",
-    ".trash/install 3 2.sh",
-    ".trash/install 2 2.sh"
+    ".trash/macosx 2.sh"
   ]
 }

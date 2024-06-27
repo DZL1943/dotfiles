@@ -44,7 +44,10 @@ def restore(config, *apps):
 
 
 def main():
-    globals()[str(sys.argv[1])](load('config.yaml'), *sys.argv[2:])
+    config = load('config.yaml')
+    apps = sys.argv[2:] or config.keys()
+    print(apps)
+    globals()[str(sys.argv[1])](config, *apps)
 
 if __name__ == "__main__":
     main()
