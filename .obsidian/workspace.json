@@ -167,9 +167,12 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "0f2e43341cac543a",
+  "active": "8ea954cf693a55b8",
   "lastOpenFiles": [
+    "Extra/Firefox/LibreWolf连接KeePassXC.md",
+    "Extra/Spotify/Spotify crack.md",
     "Linux/Linux-Commands.md",
+    "Extra/Spotify",
     "Linux/Linux-Tips.md",
     "macOS/BAB/2024-06-27-16-47-07.BABPreset",
     "macOS/Raycast/Raycast 2024-06-27 16.35.25.rayconfig",
@@ -201,7 +204,6 @@
     "config.yaml",
     "macOS/iTerm/com.googlecode.iterm2.plist",
     "macOS/iTerm/Profiles.json",
-    "macOS/iTerm",
-    ".trash/macosx 2.sh"
+    "macOS/iTerm"
   ]
 }
