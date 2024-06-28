@@ -29,8 +29,21 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "20a2a4e22bf37aef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Core/Rust/Rust.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Linux-Commands.md"
+                "file": "Core/Rust/Rust.md"
               }
             }
           },
@@ -106,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux-Commands.md",
+                "file": "Core/Rust/Rust.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Linux-Commands.md",
+                "file": "Core/Rust/Rust.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,8 +180,9 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "8ea954cf693a55b8",
+  "active": "20a2a4e22bf37aef",
   "lastOpenFiles": [
+    "Linux/Linux-Commands.md",
     "config.yaml",
     "Core/Shell/各种启动文件的关系.md",
     "Linux/Linux-Tips.md",
@@ -176,7 +190,6 @@
     "Core/Shell/.zprofile",
     "Core/Shell/.profile",
     "Extra/Kopia/Kopia.md",
-    "Linux/Linux-Commands.md",
     "macOS/FUSE-T/FUSE-T.md",
     "Extra/Scrcpy",
     "Extra/scrcpy",
