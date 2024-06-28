@@ -10,7 +10,6 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 #bindkey '^[[A' up-line-or-search
 #bindkey '^[[B' down-line-or-search
 
-source ~/.env
 source ~/.alias
 
 eval "$(zoxide init zsh)"

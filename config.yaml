@@ -1,9 +1,13 @@
 bash:
+  files:
+    ~/.profile: Core/Shell/.profile
+    ~/.bash_profile: Core/Shell/.bash_profile
+    ~/.bashrc: Core/Shell/.bashrc
 zsh:
   files:
+    ~/.zshenv: Core/Shell/.zshenv
     ~/.zprofile: Core/Shell/.zprofile
     ~/.zshrc: Core/Shell/.zshrc
-    ~/.env: Core/Shell/.env
     ~/.alias: Core/Shell/.alias
 fish:
   files:
