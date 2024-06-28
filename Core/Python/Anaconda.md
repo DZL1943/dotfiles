@@ -17,7 +17,7 @@ source $ANACONDA_HOME/bin/activate
 conda init zsh
 conda activate
 conda update --all
-conda config --set auto_activate_base False
+conda config --set auto_activate_base false
 conda create -n jupyter jupyterlab
 conda create -n py3 python=3 pip
 ```
