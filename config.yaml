@@ -9,6 +9,7 @@ zsh:
     ~/.zprofile: Core/Shell/.zprofile
     ~/.zshrc: Core/Shell/.zshrc
     ~/.alias: Core/Shell/.alias
+    ~/.env: Core/Shell/.env
 fish:
   files:
     ~/.config/fish/config.fish: Core/Shell/config.fish
