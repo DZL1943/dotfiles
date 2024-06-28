@@ -8,52 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8ea954cf693a55b8",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "Linux/Linux-Commands.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                  ]
-                }
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "5b15cc82b262e026",
+            "id": "20a2a4e22bf37aef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Core/Python/Anaconda.md",
-                "mode": "preview",
+                "file": "Core/Scala/Scala.md",
+                "mode": "source",
                 "source": true
               }
             }
-          },
-          {
-            "id": "20a2a4e22bf37aef",
-            "type": "leaf",
-            "state": {
-              "type": "vscode-editor",
-              "state": {
-                "file": "config.yaml"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Core/Python/Anaconda.md"
+                "file": "Core/Scala/Scala.md"
               }
             }
           },
@@ -129,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Core/Python/Anaconda.md",
+                "file": "Core/Scala/Scala.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Core/Python/Anaconda.md",
+                "file": "Core/Scala/Scala.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,13 +156,17 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "5b15cc82b262e026",
+  "active": "20a2a4e22bf37aef",
   "lastOpenFiles": [
+    "Core/Scala/sbt源.md",
     "config.yaml",
+    "Core/Scala/repositories",
+    "Core/Scala/.repositories.swp",
+    "macOS/macOS-Tips.md",
+    "Linux/Linux-Commands.md",
     "Core/Python/Anaconda.md",
     "Core/Python/.condarc.swp",
     "编程语言.md",
-    "Linux/Linux-Commands.md",
     "Core/Lua",
     "Core/Rust/Rust.md",
     "Core/Shell/各种启动文件的关系.md",
@@ -208,8 +178,6 @@
     "macOS/FUSE-T/FUSE-T.md",
     "Extra/Scrcpy",
     "Extra/scrcpy",
-    "Brewfile",
-    "macOS/Homebrew/.Brewfile.swp",
     "Extra/Firefox/LibreWolf连接KeePassXC.md",
     "Extra/Spotify/Spotify crack.md",
     ".trash/Shell-Tips.md",
@@ -224,8 +192,6 @@
     "Linux/rsync.md",
     ".trash/nohup.md",
     "Linux/nohup.md",
-    ".trash/ps.md",
-    ".trash/sed.md",
-    ".trash/tar.md"
+    ".trash/ps.md"
   ]
 }

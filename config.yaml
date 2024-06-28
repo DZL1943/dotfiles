@@ -52,6 +52,9 @@ conda:
 cargo:
   files:
     ~/.cargo/config: Core/Rust/config
+sbt:
+  files:
+    ~/.sbt/repositories: Core/Scala/repositories
 docker:
 ansible:
 hammerspoon:
