@@ -36,7 +36,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "软件列表.md",
+                "file": "Extra/Kopia/Kopia.md",
                 "mode": "preview",
                 "source": true
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "软件列表.md"
+                "file": "Extra/Kopia/Kopia.md"
               }
             }
           },
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "软件列表.md",
+                "file": "Extra/Kopia/Kopia.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "软件列表.md",
+                "file": "Extra/Kopia/Kopia.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,6 +182,7 @@
   },
   "active": "a33d11f1621fa006",
   "lastOpenFiles": [
+    "Linux/Linux-Commands.md",
     "macOS/FUSE-T/FUSE-T.md",
     "Extra/Scrcpy",
     "Extra/scrcpy",
@@ -189,7 +190,6 @@
     "macOS/Homebrew/.Brewfile.swp",
     "config.yaml",
     "macOS/FUSE-T",
-    "Linux/Linux-Commands.md",
     "Core/Espanso",
     "Extra/Cryptomator",
     "Extra/OBS",
