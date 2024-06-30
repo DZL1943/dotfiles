@@ -4,18 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a2498818b0f020d9",
+        "id": "0f61f32e46fd0d9a",
         "type": "tabs",
         "children": [
           {
-            "id": "20a2a4e22bf37aef",
+            "id": "0934453d79285dcc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "vscode-editor",
               "state": {
-                "file": "Core/Scala/Scala.md",
-                "mode": "source",
-                "source": true
+                "file": "config.yaml"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Core/Scala/Scala.md"
+                "file": "config.yaml"
               }
             }
           },
@@ -95,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Core/Scala/Scala.md",
+                "file": "config.yaml",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Core/Scala/Scala.md",
+                "file": "config.yaml",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,28 +154,30 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "20a2a4e22bf37aef",
+  "active": "0934453d79285dcc",
   "lastOpenFiles": [
-    "Core/Scala/sbt源.md",
+    "main.py",
     "config.yaml",
-    "Core/Scala/repositories",
+    ".trash/Core",
+    "Tools",
+    "Dev",
+    "Core/Scala/sbt源.md",
+    "Core/Scala/Scala.md",
+    "Dev/Scala/repositories",
     "Core/Scala/.repositories.swp",
     "macOS/macOS-Tips.md",
     "Linux/Linux-Commands.md",
     "Core/Python/Anaconda.md",
     "Core/Python/.condarc.swp",
     "编程语言.md",
-    "Core/Lua",
+    "Dev/Lua",
     "Core/Rust/Rust.md",
     "Core/Shell/各种启动文件的关系.md",
     "Linux/Linux-Tips.md",
-    "Core/Shell/.zshenv",
-    "Core/Shell/.zprofile",
-    "Core/Shell/.profile",
+    "Linux/Shell/.zshenv",
+    "Linux/Shell/.zprofile",
     "Extra/Kopia/Kopia.md",
     "macOS/FUSE-T/FUSE-T.md",
-    "Extra/Scrcpy",
-    "Extra/scrcpy",
     "Extra/Firefox/LibreWolf连接KeePassXC.md",
     "Extra/Spotify/Spotify crack.md",
     ".trash/Shell-Tips.md",
@@ -191,7 +191,6 @@
     ".trash/rsync.md",
     "Linux/rsync.md",
     ".trash/nohup.md",
-    "Linux/nohup.md",
-    ".trash/ps.md"
+    "Linux/nohup.md"
   ]
 }

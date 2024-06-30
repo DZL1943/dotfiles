@@ -1,31 +1,31 @@
 bash:
   files:
-    ~/.profile: Core/Shell/.profile
-    ~/.bash_profile: Core/Shell/.bash_profile
-    ~/.bashrc: Core/Shell/.bashrc
+    ~/.profile: Linux/Shell/.profile
+    ~/.bash_profile: Linux/Shell/.bash_profile
+    ~/.bashrc: Linux/Shell/.bashrc
 zsh:
   files:
-    ~/.zshenv: Core/Shell/.zshenv
-    ~/.zprofile: Core/Shell/.zprofile
-    ~/.zshrc: Core/Shell/.zshrc
-    ~/.alias: Core/Shell/.alias
-    ~/.env: Core/Shell/.env
+    ~/.zshenv: Linux/Shell/.zshenv
+    ~/.zprofile: Linux/Shell/.zprofile
+    ~/.zshrc: Linux/Shell/.zshrc
+    ~/.alias: Linux/Shell/.alias
+    ~/.env: Linux/Shell/.env
 fish:
   files:
-    ~/.config/fish/config.fish: Core/Shell/config.fish
+    ~/.config/fish/config.fish: Linux/Shell/config.fish
 vim:
   files:
-    ~/.vimrc: Core/Vim/.vimrc
+    ~/.vimrc: Tools/Vim/.vimrc
 emacs:
   files:
-    ~/.emacs.d/init.el: Core/Emacs/init.el
+    ~/.emacs.d/init.el: Tools/Emacs/init.el
 vscode:
   files:
-    "~/Library/Application Support/Code/User/settings.json": Core/VSCode/settings.json
-    "~/Library/Application Support/Code/User/keybindings.json": Core/VSCode/keybindings.json
+    "~/Library/Application Support/Code/User/settings.json": Tools/VSCode/settings.json
+    "~/Library/Application Support/Code/User/keybindings.json": Tools/VSCode/keybindings.json
 rime:
   files:
-    ~/Library/Rime/.: Extra/Rime/
+    ~/Library/Rime/.: App/Rime/
 espanso:
 iterm2:
   files:
@@ -33,28 +33,28 @@ iterm2:
     "~/Library/Application Support/iTerm2/DynamicProfiles/Profiles.json": macOS/iTerm/Profiles.json
 alacritty:
   files:
-    ~/.config/alacritty/alacritty.yml: Core/Alacritty/alacritty.yml
+    ~/.config/alacritty/alacritty.yml: Tools/Alacritty/alacritty.yml
 tmux:
   files:
-    ~/.tmux.conf: Core/Tmux/.tmux.conf
+    ~/.tmux.conf: Tools/Tmux/.tmux.conf
 git:
   files:
-    ~/.gitconfig: Core/Git/.gitconfig
+    ~/.gitconfig: Tools/Git/.gitconfig
 nodejs:
   files:
-    ~/.npmrc: Core/JavaScript/.npmrc
+    ~/.npmrc: Dev/JavaScript/.npmrc
 pip:
   files:
-    ~/.config/pip/pip.conf: Core/Python/pip.conf
+    ~/.config/pip/pip.conf: Dev/Python/pip.conf
 conda:
   files:
-    ~/.condarc: Core/Python/.condarc
+    ~/.condarc: Dev/Python/.condarc
 cargo:
   files:
-    ~/.cargo/config: Core/Rust/config
+    ~/.cargo/config: Dev/Rust/config
 sbt:
   files:
-    ~/.sbt/repositories: Core/Scala/repositories
+    ~/.sbt/repositories: Dev/Scala/repositories
 docker:
 ansible:
 hammerspoon:

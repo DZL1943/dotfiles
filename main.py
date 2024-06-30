@@ -34,7 +34,7 @@ def backup(config, *apps):
                 pass
             if os.path.isfile(f2):
                     f2 = f2 + '~'
-            os.system(f'echo gcp -v "{f1}" "{f2}"')
+            os.system(f'echo gcp -uv "{f1}" "{f2}"')
 
 def restore(config, *apps):
     for app in apps:
@@ -63,7 +63,7 @@ def restore(config, *apps):
             if f1.endswith('/.'):
                 f1 = os.path.dirname(f1)
                 f2 = os.path.join(f2, '.')
-            os.system(f'echo gcp -v "{f2}" "{f1}"')
+            os.system(f'echo gcp -uv "{f2}" "{f1}"')
 
 
 def main():

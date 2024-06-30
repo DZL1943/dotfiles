@@ -107,7 +107,7 @@
     "window.customTitleBarVisibility": "never",
     "editor.copyWithSyntaxHighlighting": false,
     "editor.stickyScroll.maxLineCount": 3,
-    "workbench.editor.wrapTabs": true,
+    "workbench.editor.wrapTabs": false,
     "ime-and-cursor.EnglishIM": "com.apple.keylayout.ABC",
     "ime-and-cursor.ChineseIM": "com.sogou.inputmethod.sogou.pinyin",
     "ime-and-cursor.obtainIMCmd": "/opt/homebrew/bin/im-select",
