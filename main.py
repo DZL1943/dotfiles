@@ -24,8 +24,9 @@ def backup(config, *apps):
             if not os.path.exists(f1):
                 continue
             if os.path.exists(f2):
-                if os.system(f'diff "{f1}" "{f2}" > /dev/null 2>&1') == 0:
-                    continue
+                # if os.system(f'diff "{f1}" "{f2}" > /dev/null 2>&1') == 0:
+                #     continue
+                pass
             elif f2.endswith('/'):
                 # os.system(f'mkdir -p "{f2}"')
                 pass
@@ -52,8 +53,9 @@ def restore(config, *apps):
             if not os.path.exists(f2):
                 continue
             if os.path.exists(f1):
-                if os.system(f'diff "{f1}" "{f2}" > /dev/null 2>&1') == 0:
-                    continue
+                # if os.system(f'diff "{f1}" "{f2}" > /dev/null 2>&1') == 0:
+                #     continue
+                pass
             elif f1.endswith('/.'):
                 # os.system(f'mkdir -p "{f1}"')
                 pass
