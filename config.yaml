@@ -16,6 +16,9 @@ fish:
 vim:
   files:
     ~/.vimrc: App/Vim/.vimrc
+nvim:
+  files:
+    ~/.config/nvim/init.lua: App/Neovim/init.lua
 emacs:
   files:
     ~/.emacs.d/init.el: App/Emacs/init.el
