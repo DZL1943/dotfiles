@@ -1,18 +1,18 @@
 bash:
   files:
-    ~/.profile: Dev/Shell/.profile
-    ~/.bash_profile: Dev/Shell/.bash_profile
-    ~/.bashrc: Dev/Shell/.bashrc
+    ~/.profile: Ops/Shell/.profile
+    ~/.bash_profile: Ops/Shell/.bash_profile
+    ~/.bashrc: Ops/Shell/.bashrc
 zsh:
   files:
-    ~/.zshenv: Dev/Shell/.zshenv
-    ~/.zprofile: Dev/Shell/.zprofile
-    ~/.zshrc: Dev/Shell/.zshrc
-    ~/.alias: Dev/Shell/.alias
-    ~/.env: Dev/Shell/.env
+    ~/.zshenv: Ops/Shell/.zshenv
+    ~/.zprofile: Ops/Shell/.zprofile
+    ~/.zshrc: Ops/Shell/.zshrc
+    ~/.alias: Ops/Shell/.alias
+    ~/.env: Ops/Shell/.env
 fish:
   files:
-    ~/.config/fish/config.fish: Dev/Shell/config.fish
+    ~/.config/fish/config.fish: Ops/Shell/config.fish
 vim:
   files:
     ~/.vimrc: App/Vim/.vimrc
