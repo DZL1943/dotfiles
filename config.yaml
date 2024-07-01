@@ -1,45 +1,45 @@
 bash:
   files:
-    ~/.profile: Linux/Shell/.profile
-    ~/.bash_profile: Linux/Shell/.bash_profile
-    ~/.bashrc: Linux/Shell/.bashrc
+    ~/.profile: Dev/Shell/.profile
+    ~/.bash_profile: Dev/Shell/.bash_profile
+    ~/.bashrc: Dev/Shell/.bashrc
 zsh:
   files:
-    ~/.zshenv: Linux/Shell/.zshenv
-    ~/.zprofile: Linux/Shell/.zprofile
-    ~/.zshrc: Linux/Shell/.zshrc
-    ~/.alias: Linux/Shell/.alias
-    ~/.env: Linux/Shell/.env
+    ~/.zshenv: Dev/Shell/.zshenv
+    ~/.zprofile: Dev/Shell/.zprofile
+    ~/.zshrc: Dev/Shell/.zshrc
+    ~/.alias: Dev/Shell/.alias
+    ~/.env: Dev/Shell/.env
 fish:
   files:
-    ~/.config/fish/config.fish: Linux/Shell/config.fish
+    ~/.config/fish/config.fish: Dev/Shell/config.fish
 vim:
   files:
-    ~/.vimrc: Tools/Vim/.vimrc
+    ~/.vimrc: App/Vim/.vimrc
 emacs:
   files:
-    ~/.emacs.d/init.el: Tools/Emacs/init.el
+    ~/.emacs.d/init.el: App/Emacs/init.el
 vscode:
   files:
-    "~/Library/Application Support/Code/User/settings.json": Tools/VSCode/settings.json
-    "~/Library/Application Support/Code/User/keybindings.json": Tools/VSCode/keybindings.json
+    "~/Library/Application Support/Code/User/settings.json": App/VSCode/settings.json
+    "~/Library/Application Support/Code/User/keybindings.json": App/VSCode/keybindings.json
 rime:
   files:
     ~/Library/Rime/.: App/Rime/
 espanso:
 iterm2:
   files:
-    ~/Library/Preferences/com.googlecode.iterm2.plist: macOS/iTerm/com.googlecode.iterm2.plist
+    "~/Library/Preferences/com.googlecode.iterm2.plist": macOS/iTerm/com.googlecode.iterm2.plist
     "~/Library/Application Support/iTerm2/DynamicProfiles/Profiles.json": macOS/iTerm/Profiles.json
 alacritty:
   files:
-    ~/.config/alacritty/alacritty.yml: Tools/Alacritty/alacritty.yml
+    ~/.config/alacritty/alacritty.yml: App/Alacritty/alacritty.yml
 tmux:
   files:
-    ~/.tmux.conf: Tools/Tmux/.tmux.conf
+    ~/.tmux.conf: App/Tmux/.tmux.conf
 git:
   files:
-    ~/.gitconfig: Tools/Git/.gitconfig
+    ~/.gitconfig: Dev/Git/.gitconfig
 nodejs:
   files:
     ~/.npmrc: Dev/JavaScript/.npmrc
