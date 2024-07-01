@@ -1,4 +1,4 @@
-apps=("Microsoft Edge" "ClashX Pro" "OBS")
+apps=("Microsoft Edge" "ClashX Pro" "Clash Verge" "OBS")
 for app in "${apps[@]}"; do
     osascript -e "quit app \"$app\""
 done
