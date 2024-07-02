@@ -56,6 +56,39 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ','
 
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+vim.keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
+-- vim.keymap.set("v", "<", "<gv")
+-- vim.keymap.set("v", ">", ">gv")
+
+vim.keymap.set("n", "<C-h>", "<C-w>h", {noremap=true, silent=true})
+vim.keymap.set("n", "<C-j>", "<C-w>j", {noremap=true, silent=true})
+vim.keymap.set("n", "<C-k>", "<C-w>k", {noremap=true, silent=true})
+vim.keymap.set("n", "<C-l>", "<C-w>l", {noremap=true, silent=true})
+vim.keymap.set("n", "<C-Up>", ":resize -2<CR>", {noremap=true, silent=true})
+vim.keymap.set("n", "<C-Down>", ":resize +2<CR>", {noremap=true, silent=true})
+vim.keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", {noremap=true, silent=true})
+vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", {noremap=true, silent=true})
+
+-- vim.keymap.set("n", "<leader>ww", "<C-W>p", { desc = "Other Window", remap = true })
+-- vim.keymap.set("n", "<leader>wd", "<C-W>c", { desc = "Delete Window", remap = true })
+-- vim.keymap.set("n", "<leader>w-", "<C-W>s", { desc = "Split Window Below", remap = true })
+-- vim.keymap.set("n", "<leader>w|", "<C-W>v", { desc = "Split Window Right", remap = true })
+-- vim.keymap.set("n", "<leader>-", "<C-W>s", { desc = "Split Window Below", remap = true })
+-- vim.keymap.set("n", "<leader>|", "<C-W>v", { desc = "Split Window Right", remap = true })
+
+vim.keymap.set("n", "<A-j>", ":m .+1<CR>==", {noremap=true, silent=true})
+vim.keymap.set("n", "<A-k>", ":m .-2<CR>==", {noremap=true, silent=true})
+vim.keymap.set("i", "<A-j>", "<esc><cmd>m .+1<cr>==gi", {noremap=true, silent=true})
+vim.keymap.set("i", "<A-k>", "<esc><cmd>m .-2<cr>==gi", {noremap=true, silent=true})
+vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", {noremap=true, silent=true})
+vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", {noremap=true, silent=true})
+-- vim.keymap.set("v", "p", '"_dP', {noremap=true, silent=true})
+-- vim.keymap.set("x", "J", ":m '>+1<CR>gv=gv", {noremap=true, silent=true})
+-- vim.keymap.set("x", "K", ":m '<-2<CR>gv=gv", {noremap=true, silent=true})
+-- vim.keymap.set("x", "<A-j>", ":m '>+1<CR>gv=gv", {noremap=true, silent=true})
+-- vim.keymap.set("x", "<A-k>", ":m '<-2<CR>gv=gv", {noremap=true, silent=true})
+-- vim.keymap.set("n", "<S-l>", ":bnext<CR>", {noremap=true, silent=true})
+-- vim.keymap.set("n", "<S-h>", ":bprevious<CR>", {noremap=true, silent=true})
 
 -- require("config.lazy")
 
