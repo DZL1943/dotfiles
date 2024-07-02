@@ -47,6 +47,11 @@ vim.opt.undofile = true
 vim.opt.updatetime = 250
 vim.opt.timeoutlen = 300
 
+-- local options = {}
+-- for k,v in pairs(options) do
+--     vim.optp[k] = v
+-- end
+
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ','
 
