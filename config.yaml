@@ -1,31 +1,31 @@
 bash:
   files:
-    ~/.profile: Ops/Shell/.profile
-    ~/.bash_profile: Ops/Shell/.bash_profile
-    ~/.bashrc: Ops/Shell/.bashrc
+    ~/.profile: Tools/Shell/.profile
+    ~/.bash_profile: Tools/Shell/.bash_profile
+    ~/.bashrc: Tools/Shell/.bashrc
 zsh:
   files:
-    ~/.zshenv: Ops/Shell/.zshenv
-    ~/.zprofile: Ops/Shell/.zprofile
-    ~/.zshrc: Ops/Shell/.zshrc
-    ~/.alias: Ops/Shell/.alias
-    ~/.env: Ops/Shell/.env
+    ~/.zshenv: Tools/Shell/.zshenv
+    ~/.zprofile: Tools/Shell/.zprofile
+    ~/.zshrc: Tools/Shell/.zshrc
+    ~/.alias: Tools/Shell/.alias
+    ~/.env: Tools/Shell/.env
 fish:
   files:
-    ~/.config/fish/config.fish: Ops/Shell/config.fish
+    ~/.config/fish/config.fish: Tools/Shell/config.fish
 vim:
   files:
-    ~/.vimrc: App/Vim/.vimrc
+    ~/.vimrc: Tools/Vim/.vimrc
 nvim:
   files:
-    ~/.config/nvim/init.lua: App/Neovim/init.lua
+    ~/.config/nvim/init.lua: Tools/Neovim/init.lua
 emacs:
   files:
-    ~/.emacs.d/init.el: App/Emacs/init.el
+    ~/.emacs.d/init.el: Tools/Emacs/init.el
 vscode:
   files:
-    "~/Library/Application Support/Code/User/settings.json": App/VSCode/settings.json
-    "~/Library/Application Support/Code/User/keybindings.json": App/VSCode/keybindings.json
+    "~/Library/Application Support/Code/User/settings.json": Tools/VSCode/settings.json
+    "~/Library/Application Support/Code/User/keybindings.json": Tools/VSCode/keybindings.json
 rime:
   files:
     ~/Library/Rime/.: App/Rime/
@@ -36,13 +36,16 @@ iterm2:
     "~/Library/Application Support/iTerm2/DynamicProfiles/Profiles.json": macOS/iTerm/Profiles.json
 alacritty:
   files:
-    ~/.config/alacritty/alacritty.yml: App/Alacritty/alacritty.yml
+    ~/.config/alacritty/alacritty.yml: Tools/Alacritty/alacritty.yml
+kitty:
+  files:
+    ~/.config/kitty/kitty.conf: Tools/Kitty/kitty.conf
 tmux:
   files:
-    ~/.tmux.conf: App/Tmux/.tmux.conf
+    ~/.tmux.conf: Tools/Tmux/.tmux.conf
 git:
   files:
-    ~/.gitconfig: Dev/Git/.gitconfig
+    ~/.gitconfig: Tools/Git/.gitconfig
 nodejs:
   files:
     ~/.npmrc: Dev/JavaScript/.npmrc

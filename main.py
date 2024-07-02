@@ -34,6 +34,7 @@ def backup(config, *apps):
                 # os.system(f'mkdir -p "{os.path.dirname(f2)}"')
                 pass
             if os.path.isfile(f2):
+                    # just bak and will not overwrite existed files.
                     f2 = f2 + '~'
             os.system(f'echo gcp -uv "{f1}" "{f2}"')
 
@@ -65,7 +66,7 @@ def restore(config, *apps):
             if f1.endswith('/.'):
                 f1 = os.path.dirname(f1)
                 f2 = os.path.join(f2, '.')
-            os.system(f'echo gcp -uv "{f2}" "{f1}"')
+            os.system(f'echo gcp -uv --backup=t "{f2}" "{f1}"')
 
 
 def main():

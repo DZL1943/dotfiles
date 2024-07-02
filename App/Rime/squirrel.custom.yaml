@@ -407,6 +407,12 @@ patch:
     com.apple.Terminal:
       ascii_mode: true
       vim_mode: true
+    net.kovidgoyal.kitty:
+      ascii_mode: true
+      vim_mode: true
+    org.alacritty:
+      ascii_mode: true
+      vim_mode: true
     com.googlecode.iterm2:
       ascii_mode: true
       vim_mode: true
