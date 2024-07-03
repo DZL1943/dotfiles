@@ -17,9 +17,9 @@ return {
         "neovim/nvim-lspconfig",
         config = function ()
             local lspconfig = require("lspconfig")
-            lspconfig['lua_ls'].setup()
-            lspconfig['rust_analyzer'].setup()
-            lspconfig['pyright'].setup()
+            lspconfig['lua_ls'].setup({})
+            lspconfig['rust_analyzer'].setup({})
+            lspconfig['pyright'].setup({})
         end
     },
     {
