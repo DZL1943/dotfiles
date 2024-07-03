@@ -9,7 +9,7 @@ vim.opt.scrolloff = 5
 -- vim.opt.wildmenu = true
 -- vim.opt.wildoptions = 'pum,tagfile'
 -- vim.opt.wildmode = 'full'
--- vim.opt.completeopt = { "menu", "menuone", "noselect" }
+vim.opt.completeopt = { "menu", "menuone", "noselect" }
 vim.opt.termguicolors = true
 vim.opt.shortmess:append { s = true, I = true }
 vim.opt.signcolumn = 'yes'

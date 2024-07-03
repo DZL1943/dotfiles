@@ -21,16 +21,21 @@ return {
                 "marksman",
                 -- "sqls",
             },
+            -- handlers = nil,
         }
     },
     {
         "neovim/nvim-lspconfig",
         config = function()
             local lspconfig = require("lspconfig")
-            lspconfig['lua_ls'].setup({})
-            lspconfig['pyright'].setup({})
-            lspconfig['tsserver'].setup({})
-            lspconfig['rust_analyzer'].setup({})
+            local servers = { 'lua_ls', 'pyright', 'tsserver', 'rust_analyzer' }
+            for _, server in ipairs(servers) do
+                lspconfig[server].setup({
+                    --   on_init = on_init,
+                    --   on_attach = on_attach,
+                    --   capabilities = capabilities,
+                })
+            end
         end
     },
     {
@@ -60,6 +65,32 @@ return {
         },
     },
     { "mfussenegger/nvim-lint", enabled = false },
+    {
+        "scalameta/nvim-metals",
+        enabled = false,
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+        },
+        ft = { "scala", "sbt", "java" },
+        opts = function()
+            local metals_config = require("metals").bare_config()
+            metals_config.on_attach = function(client, bufnr)
+                -- your on_attach function
+            end
+
+            return metals_config
+        end,
+        config = function(self, metals_config)
+            local nvim_metals_group = vim.api.nvim_create_augroup("nvim-metals", { clear = true })
+            vim.api.nvim_create_autocmd("FileType", {
+                pattern = self.ft,
+                callback = function()
+                    require("metals").initialize_or_attach(metals_config)
+                end,
+                group = nvim_metals_group,
+            })
+        end
+    },
     {
         'nvim-orgmode/orgmode',
         enabled = false,
