@@ -47,6 +47,33 @@ local lualine_plugin = {
     },
 }
 
+local buffline_plugin = {
+    'akinsho/bufferline.nvim',
+    version = "*",
+    dependencies = 'nvim-tree/nvim-web-devicons',
+    enabled = false,
+    config = true,
+}
+
+local barbar_plugin = {
+    'romgrk/barbar.nvim',
+    dependencies = {
+        -- 'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
+        'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
+    },
+    enabled = false,
+    init = function() vim.g.barbar_auto_setup = false end,
+    opts = {
+        animation = true,
+        auto_hide = 1,
+        tabpages = true,
+        clickable = true,
+        -- hide = {extensions = true, inactive = true},
+        separator = {left = '▎', right = ''},
+    },
+    version = '^1.0.0', -- optional: only update when a new 1.x version is released
+}
+
 local whichkey_plugin = {
     "folke/which-key.nvim",
     event = "VeryLazy",
@@ -433,4 +460,7 @@ return {
     lualine_plugin,
     whichkey_plugin,
     neotree_plugin,
+    buffline_plugin,
+    barbar_plugin,
+    telescope_plugin,
 }
