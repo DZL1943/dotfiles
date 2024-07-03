@@ -7,9 +7,12 @@ return {
         "williamboman/mason-lspconfig.nvim",
         opts = {
             ensure_installed = {
+                "jsonls",
                 "lua_ls",
+                "tsserver",
                 "pyright",
                 "rust_analyzer",
+                -- "jdtls",
             },
         }
     },
@@ -18,8 +21,9 @@ return {
         config = function ()
             local lspconfig = require("lspconfig")
             lspconfig['lua_ls'].setup({})
-            lspconfig['rust_analyzer'].setup({})
             lspconfig['pyright'].setup({})
+            lspconfig['tsserver'].setup({})
+            lspconfig['rust_analyzer'].setup({})
         end
     },
     {
