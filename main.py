@@ -13,60 +13,63 @@ def backup(config, *apps):
         data = config.get(app)
         if not data:
             continue
-        files = data.get('files')
-        if not files:
+        paths = data.get('paths')
+        if not paths:
             continue
-        pairs = list(files.items())
-        for f1, f2 in pairs:
-            f1 = os.path.expanduser(f1)
-            f2 = os.path.expanduser(f2)
-            # print(f'{f1} {f2}')
-            if not os.path.exists(f1):
+        pairs = list(paths.items())
+        for p1, p2 in pairs:
+            p1 = os.path.expanduser(p1)
+            p2 = os.path.expanduser(p2)
+            # print(f'{p1} {p2}')
+            if not os.path.exists(p1):
                 continue
-            if os.path.exists(f2):
-                # if os.system(f'diff "{f1}" "{f2}" > /dev/null 2>&1') == 0:
+            if os.path.exists(p2):
+                # if os.system(f'diff "{p1}" "{p2}" > /dev/null 2>&1') == 0:
                 #     continue
                 pass
-            elif f2.endswith('/'):
-                # os.system(f'mkdir -p "{f2}"')
+            elif p2.endswith(('/', '/.', '/..')):
+                # os.system(f'mkdir -p "{p2}"')
                 pass
             else:
-                # os.system(f'mkdir -p "{os.path.dirname(f2)}"')
+                # os.system(f'mkdir -p "{os.path.dirname(p2)}"')
                 pass
-            if os.path.isfile(f2):
-                    # just bak and will not overwrite existed files.
-                    f2 = f2 + '~'
-            os.system(f'echo gcp -uv "{f1}" "{f2}"')
+            if os.path.isfile(p2):
+                    # just bak and will not overwrite existed paths.
+                    p2 = p2 + '~'
+            os.system(f'echo gcp -ruv "{p1}" "{p2}"')
 
 def restore(config, *apps):
     for app in apps:
         data = config.get(app)
         if not data:
             continue
-        files = data.get('files')
-        if not files:
+        paths = data.get('paths')
+        if not paths:
             continue
-        pairs = list(files.items())
-        for f1, f2 in pairs:
-            f1 = os.path.expanduser(f1)
-            f2 = os.path.expanduser(f2)
-            # print(f'{f1} {f2}')
-            if not os.path.exists(f2):
+        pairs = list(paths.items())
+        for p1, p2 in pairs:
+            p1 = os.path.expanduser(p1)
+            p2 = os.path.expanduser(p2)
+            # print(f'{p1} {p2}')
+            if not os.path.exists(p2):
                 continue
-            if os.path.exists(f1):
-                # if os.system(f'diff "{f1}" "{f2}" > /dev/null 2>&1') == 0:
+            if os.path.exists(p1):
+                # if os.system(f'diff "{p1}" "{p2}" > /dev/null 2>&1') == 0:
                 #     continue
                 pass
-            elif f1.endswith('/.'):
-                # os.system(f'mkdir -p "{f1}"')
+            elif p1.endswith(('/', '/.', '/..')):
+                # os.system(f'mkdir -p "{p1}"')
                 pass
             else:
-                # os.system(f'mkdir -p "{os.path.dirname(f1)}"')
+                # os.system(f'mkdir -p "{os.path.dirname(p1)}"')
                 pass
-            if f1.endswith('/.'):
-                f1 = os.path.dirname(f1)
-                f2 = os.path.join(f2, '.')
-            os.system(f'echo gcp -uv --backup=t "{f2}" "{f1}"')
+            if p1.endswith('/.'):
+                p1 = os.path.dirname(p1)
+                p2 = os.path.join(p2, '.')
+            elif p2.endswith('/..'):
+                p2 = os.path.dirname(p2)
+                p1 = os.path.join(p1, '..')
+            os.system(f'echo gcp -ruv --backup=t "{p2}" "{p1}"')
 
 
 def main():

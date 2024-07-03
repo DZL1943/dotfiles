@@ -1,76 +1,77 @@
 bash:
-  files:
+  paths:
     ~/.profile: Tools/Shell/.profile
     ~/.bash_profile: Tools/Shell/.bash_profile
     ~/.bashrc: Tools/Shell/.bashrc
 zsh:
-  files:
+  paths:
     ~/.zshenv: Tools/Shell/.zshenv
     ~/.zprofile: Tools/Shell/.zprofile
     ~/.zshrc: Tools/Shell/.zshrc
     ~/.alias: Tools/Shell/.alias
     ~/.env: Tools/Shell/.env
 fish:
-  files:
+  paths:
     ~/.config/fish/config.fish: Tools/Shell/config.fish
 vim:
-  files:
+  paths:
     ~/.vimrc: Tools/Vim/.vimrc
 nvim:
-  files:
+  paths:
     ~/.config/nvim/init.lua: Tools/Neovim/init.lua
+    ~/.config/nvim/lua/: Tools/Neovim/lua/.. 
 emacs:
-  files:
+  paths:
     ~/.emacs.d/init.el: Tools/Emacs/init.el
 vscode:
-  files:
+  paths:
     "~/Library/Application Support/Code/User/settings.json": Tools/VSCode/settings.json
     "~/Library/Application Support/Code/User/keybindings.json": Tools/VSCode/keybindings.json
 rime:
-  files:
+  paths:
     ~/Library/Rime/.: App/Rime/
 espanso:
 iterm2:
-  files:
+  paths:
     "~/Library/Preferences/com.googlecode.iterm2.plist": macOS/iTerm/com.googlecode.iterm2.plist
     "~/Library/Application Support/iTerm2/DynamicProfiles/Profiles.json": macOS/iTerm/Profiles.json
 alacritty:
-  files:
+  paths:
     ~/.config/alacritty/alacritty.yml: Tools/Alacritty/alacritty.yml
 kitty:
-  files:
+  paths:
     ~/.config/kitty/kitty.conf: Tools/Kitty/kitty.conf
 tmux:
-  files:
+  paths:
     ~/.tmux.conf: Tools/Tmux/.tmux.conf
 git:
-  files:
+  paths:
     ~/.gitconfig: Tools/Git/.gitconfig
 nodejs:
-  files:
+  paths:
     ~/.npmrc: Dev/JavaScript/.npmrc
 pip:
-  files:
+  paths:
     ~/.config/pip/pip.conf: Dev/Python/pip.conf
 conda:
-  files:
+  paths:
     ~/.condarc: Dev/Python/.condarc
 cargo:
-  files:
+  paths:
     ~/.cargo/config: Dev/Rust/config
 sbt:
-  files:
+  paths:
     ~/.sbt/repositories: Dev/Scala/repositories
 docker:
 ansible:
 hammerspoon:
-  files:
+  paths:
     ~/.hammerspoon/init.lua: macOS/Hammerspoon/init.lua
 sleepwatcher:
-  files:
+  paths:
     ~/.sleep: macOS/SleepWatcher/.sleep
     ~/.wakeup: macOS/SleepWatcher/.wakeup
 mac-mouse-fix:
-  files:
+  paths:
     "~/Library/Application Support/com.nuebling.mac-mouse-fix/config.plist": macOS/Mac-Mouse-Fix/config.plist
 obs:
