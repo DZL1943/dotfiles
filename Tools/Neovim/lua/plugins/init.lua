@@ -6,17 +6,118 @@ return {
         init = function()
             vim.opt.cmdheight = 0
         end,
-        opts = {},
+        opts = {
+            options = {
+                icons_enabled = true,
+                theme = 'auto',
+                component_separators = { left = '', right = '' },
+                section_separators = { left = '', right = '' },
+                disabled_filetypes = {
+                    statusline = {},
+                    winbar = {},
+                },
+                ignore_focus = {},
+                always_divide_middle = true,
+                globalstatus = false,
+                refresh = {
+                    statusline = 1000,
+                    tabline = 1000,
+                    winbar = 1000,
+                }
+            },
+            sections = {
+                lualine_a = { 'mode' },
+                lualine_b = { 'branch', 'diff', 'diagnostics' },
+                lualine_c = { 'filename' },
+                lualine_x = { 'encoding', 'fileformat', 'filetype' },
+                lualine_y = { 'progress' },
+                lualine_z = { 'location' }
+            },
+            inactive_sections = {
+                lualine_a = {},
+                lualine_b = {},
+                lualine_c = { 'filename' },
+                lualine_x = { 'location' },
+                lualine_y = {},
+                lualine_z = {}
+            },
+            tabline = {},
+            winbar = {},
+            inactive_winbar = {},
+            extensions = {}
+        },
     },
     {
         "folke/which-key.nvim",
-        enabled = false,
         event = "VeryLazy",
         init = function()
             vim.o.timeout = true
             vim.o.timeoutlen = 300
         end,
-        opts = {},
+        opts = {
+            plugins = { spelling = true },
+            defaults = {
+                mode = { "n", "v" },
+                ["g"] = { name = "+goto" },
+                ["gs"] = { name = "+surround" },
+                ["z"] = { name = "+fold" },
+                ["]"] = { name = "+next" },
+                ["["] = { name = "+prev" },
+                ["<leader><tab>"] = { name = "+tabs" },
+                ["<leader>b"] = { name = "+buffer" },
+                ["<leader>c"] = { name = "+code" },
+                ["<leader>f"] = { name = "+file/find" },
+                ["<leader>g"] = { name = "+git" },
+                ["<leader>gh"] = { name = "+hunks", ["_"] = "which_key_ignore" },
+                ["<leader>q"] = { name = "+quit/session" },
+                ["<leader>s"] = { name = "+search" },
+                ["<leader>u"] = { name = "+ui" },
+                ["<leader>w"] = { name = "+windows" },
+                ["<leader>x"] = { name = "+diagnostics/quickfix" },
+            },
+        },
+        config = function(_, opts)
+            local wk = require("which-key")
+            wk.setup(opts)
+            wk.register(opts.defaults)
+        end,
+    },
+    {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.8',
+        -- or                              , branch = '0.1.x',
+        dependencies = { 'nvim-lua/plenary.nvim' },
+        enabled = false,
+        opts = {
+            defaults = {
+                -- Default configuration for telescope goes here:
+                -- config_key = value,
+                mappings = {
+                    i = {
+                        -- map actions.which_key to <C-h> (default: <C-/>)
+                        -- actions.which_key shows the mappings for your picker,
+                        -- e.g. git_{create, delete, ...}_branch for the git_branches picker
+                        ["<C-h>"] = "which_key"
+                    }
+                }
+            },
+            pickers = {
+                -- Default configuration for builtin pickers goes here:
+                -- picker_name = {
+                --   picker_config_key = value,
+                --   ...
+                -- }
+                -- Now the picker_config_key will be applied every time you call this
+                -- builtin picker
+            },
+            extensions = {
+                -- Your extension configuration goes here:
+                -- extension_name = {
+                --   extension_config_key = value,
+                -- }
+                -- please take a look at the readme of the extension you want to configure
+            }
+        },
     },
     {
         "nvim-neo-tree/neo-tree.nvim",
