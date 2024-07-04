@@ -1,4 +1,4 @@
-local M = {
+return {
     'neovim/nvim-lspconfig',
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-buffer',
@@ -12,7 +12,7 @@ local M = {
             'hrsh7th/cmp-buffer',
             'hrsh7th/cmp-path',
             'hrsh7th/cmp-cmdline',
-          },
+        },
         opts = function()
             local cmp = require("cmp")
             return {
@@ -52,5 +52,3 @@ local M = {
     'L3MON4D3/LuaSnip',
     'saadparwaiz1/cmp_luasnip',
 }
-
-return M
