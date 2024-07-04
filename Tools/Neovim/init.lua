@@ -18,11 +18,11 @@ vim.opt.signcolumn = 'yes'
 vim.opt.mouse = 'a'
 vim.opt.clipboard = 'unnamedplus'
 vim.opt.tabstop = 4
-vim .opt.softtabstop = 4
+vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.shiftround = true
 vim.opt.expandtab = true
-vim.opt.smartindent= true
+vim.opt.smartindent = true
 vim.opt.copyindent = true
 vim.opt.whichwrap = 'bs<>[]hl'
 vim.opt.ignorecase = true
@@ -100,6 +100,12 @@ vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv")
 -- vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
 
 if vim.g.neovide then
+    vim.keymap.set('n', '<D-s>', ':w<CR>')      -- Save
+    vim.keymap.set('v', '<D-c>', '"+y')         -- Copy
+    vim.keymap.set('n', '<D-v>', '"+P')         -- Paste normal mode
+    vim.keymap.set('v', '<D-v>', '"+P')         -- Paste visual mode
+    vim.keymap.set('c', '<D-v>', '<C-R>+')      -- Paste command mode
+    vim.keymap.set('i', '<D-v>', '<ESC>l"+Pli') -- Paste insert mode
     vim.o.guifont = "Menlo:h18"
     -- vim.opt.linespace = 0
     -- vim.g.neovide_scale_factor = 1.0
