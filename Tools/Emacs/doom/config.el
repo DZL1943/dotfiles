@@ -5,7 +5,7 @@
 (setq display-line-numbers-type 'relative)
 (setq org-directory "~/org/")
 (setq default-directory "~/org/")
-(when (window-system)
+(when (display-graphic-p)
   (setq initial-frame-alist `(
     (top . 20) (left . 150)
     (width . (text-pixels . ,(round (*    (x-display-pixel-width) 0.72))))    (height . (text-pixels . ,(round (*    (x-display-pixel-height) 0.84))))
