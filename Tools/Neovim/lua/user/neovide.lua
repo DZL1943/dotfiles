@@ -23,9 +23,9 @@ if vim.g.neovide then
     -- vim.g.neovide_light_radius = 5
     vim.g.neovide_transparency = 0.9
     -- vim.g.neovide_show_border = true
-    -- vim.g.neovide_position_animation_length = 0.15
+    vim.g.neovide_position_animation_length = 0
     -- vim.g.neovide_scroll_animation_length = 0.3
-    -- vim.g.neovide_scroll_animation_far_lines = 1
+    vim.g.neovide_scroll_animation_far_lines = 0
     -- vim.g.neovide_hide_mouse_when_typing = false
     -- vim.g.neovide_underline_stroke_scale = 1.0
     -- vim.g.neovide_theme = 'auto'
@@ -41,7 +41,7 @@ if vim.g.neovide then
     -- vim.g.neovide_input_ime = true
     -- vim.g.neovide_touch_deadzone = 6.0
     -- vim.g.neovide_touch_drag_timeout = 0.17
-    -- vim.g.neovide_cursor_animation_length = 0.13
+    vim.g.neovide_cursor_animation_length = 0
     -- vim.g.neovide_cursor_trail_size = 0.8
     -- vim.g.neovide_cursor_antialiasing = true
     vim.g.neovide_cursor_animate_in_insert_mode = false
