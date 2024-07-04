@@ -52,6 +52,18 @@ return {
     { "Bilal2453/luvit-meta",   lazy = true }, -- optional `vim.uv` typings
     -- { "folke/neodev.nvim", enabled = false }, -- make sure to uninstall
     {
+        "mfussenegger/nvim-dap",
+        enabled = false,
+        dependencies = {
+            "rcarriga/nvim-dap-ui",
+            -- virtual text for the debugger
+            {
+                "theHamsta/nvim-dap-virtual-text",
+                opts = {},
+            },
+        },
+    },
+    {
         'stevearc/conform.nvim',
         enabled = false,
         opts = {
