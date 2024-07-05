@@ -1,5 +1,6 @@
 (setq confirm-kill-emacs nil)
-(add-hook 'after-init-hook 'doom/switch-to-scratch-buffer)
+;; (add-hook 'after-init-hook 'doom/switch-to-scratch-buffer)
+
 ;; M-x nerd-icons-install-fonts
 (setq doom-font (font-spec :family "Hack Nerd Font" :size 20 :weight 'semi-light)
 )
@@ -14,7 +15,11 @@
   ))
   (set-frame-parameter nil 'alpha 85)
   ;; (global-tab-line-mode 1)
-  ;; (setq doom-unreal-buffer-functions '(minibufferp))
-  ;; :ui tabs not display
+  ;; :ui tabs not display, https://github.com/doomemacs/doomemacs/issues/6280
   ;; (after! centaur-tabs (centaur-tabs-group-by-projectile-project))
 )
+
+;; can't switch to unreal buffer, https://github.com/doomemacs/doomemacs/issues/3495
+  ;; (setq doom-unreal-buffer-functions '(minibufferp))
+(after! persp-mode
+  (remove-hook 'persp-add-buffer-on-after-change-major-mode-filter-functions #'doom-unreal-buffer-p))
