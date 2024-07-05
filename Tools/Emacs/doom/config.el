@@ -21,5 +21,4 @@
 
 ;; can't switch to unreal buffer, https://github.com/doomemacs/doomemacs/issues/3495
   ;; (setq doom-unreal-buffer-functions '(minibufferp))
-(after! persp-mode
-  (remove-hook 'persp-add-buffer-on-after-change-major-mode-filter-functions #'doom-unreal-buffer-p))
+;; (after! persp-mode (remove-hook 'persp-add-buffer-on-after-change-major-mode-filter-functions #'doom-unreal-buffer-p))
