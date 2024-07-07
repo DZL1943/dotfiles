@@ -20,4 +20,5 @@ zstyle ':vcs_info:git:*' formats ' %F{red}%b%f'
 
 source ~/.alias
 
-eval "$(zoxide init zsh)"
+# eval "$(zoxide init zsh)"
+# eval "$(mcfly init zsh)"
