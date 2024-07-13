@@ -16,6 +16,7 @@
     "editor.fontSize": 20,
     "editor.guides.bracketPairs": "active",
     // "editor.insertSpaces": true,
+    "editor.lineNumbers": "relative",
     "editor.linkedEditing": true,
     "editor.minimap.autohide": true,
     "editor.minimap.enabled": false,
