@@ -62,7 +62,7 @@ conda:
     ~/.condarc: Dev/Python/.condarc
 cargo:
   paths:
-    ~/.cargo/config: Dev/Rust/config
+    ~/.cargo/config.toml: Dev/Rust/config.toml
 sbt:
   paths:
     ~/.sbt/repositories: Dev/Scala/repositories
