@@ -12,8 +12,8 @@ return {
 		opts = {
 			ensure_installed = {
 				"lua_ls",
-				"tsserver",
-				"pyright",
+				-- "tsserver",
+				-- "pyright",
 				-- "rust_analyzer",
 				-- "jdtls",
 				-- "clangd",

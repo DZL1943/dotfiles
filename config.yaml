@@ -20,6 +20,10 @@ nvim:
   paths:
     ~/.config/nvim/init.lua: Tools/Neovim/init.lua
     ~/.config/nvim/lua/: Tools/Neovim/lua/.. 
+helix:
+  paths:
+    ~/.config/helix/config.toml: Tools/Helix/config.toml
+    ~/.config/helix/languages.toml: Tools/Helix/languages.toml
 emacs:
   paths:
     ~/.emacs.d/init.el: Tools/Emacs/init.el
@@ -62,8 +66,10 @@ cargo:
 sbt:
   paths:
     ~/.sbt/repositories: Dev/Scala/repositories
-docker:
 ansible:
+docker:
+podman:
+kubernetes:
 hammerspoon:
   paths:
     ~/.hammerspoon/init.lua: macOS/Hammerspoon/init.lua
