@@ -1,5 +1,8 @@
 [[language]]
 name = "python"
+file-types = ["py"]
+comment-tokens = "#"
+indent = { tab-width = 4 }
 language-servers = [ "pyright", "ruff" ]
 
 [language-server.pyright.config.python.analysis]
