@@ -35,3 +35,5 @@ alias gsh='git show'
 alias gst='git status'
 alias gsw='git switch'
 alias gt='git tag'
+
+alias fzfp="fzf --preview='bat --color=always {}' --preview-window='right:65%'"
