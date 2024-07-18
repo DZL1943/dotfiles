@@ -21,7 +21,8 @@ zstyle ':vcs_info:git:*' formats ' %F{red}%b%f'
 source ~/.alias
 
 export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git|sort -r'
-alias fzfp="fzf --preview='bat --color=always {}' --preview-window='right:65%'"
-alias fzf-glow="fzf --preview='glow --style=dark {}' --preview-window='right:65%'"
+alias fzfp="fzf --preview='bat --color=always {}' --preview-window='right:65%' --bind alt-up:preview-up,altdown:preview-down"
+alias fzf-glow="fzf --preview='glow --style=dark {}' --preview-window='right:65%' --bind alt-up:preview-up,alt-down:preview-down"
+
 # eval "$(zoxide init zsh)"
 # eval "$(mcfly init zsh)"
