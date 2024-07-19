@@ -5,6 +5,7 @@ alias cp='cp -i'
 
 alias ls='ls --color'
 alias la='ls -a'
+alias l='ls -l'
 alias ll='ls -al --group-directories-first'
 alias l1='ls -1 --group-directories-first'
 
