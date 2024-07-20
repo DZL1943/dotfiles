@@ -61,7 +61,7 @@ S-A-right = "extend_next_word_start"
 # A-right = "move_next_word_end"
 A-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 A-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
-d = { d = ["extend_to_line_bounds", "delete_selection"] }
+#d = { d = ["extend_to_line_bounds", "delete_selection"] }
 "C-/" = "toggle_comments"
 
 [keys.insert]
