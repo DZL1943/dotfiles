@@ -34,6 +34,9 @@ vscode:
 rime:
   paths:
     ~/Library/Rime/.: App/Rime/
+sogou:
+  paths:
+    "~/Library/Application Support/Sogou/InputMethod/SogouPY/symbolSubsitute.plist": App/SogouInput/symbolSubsitute.plist
 espanso:
 iterm2:
   paths:
