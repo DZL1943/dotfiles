@@ -24,5 +24,6 @@ export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --e
 alias fzfp="fzf --preview='bat --theme=Dracula --color=always {}' --preview-window='right:65%' --bind alt-up:preview-up,alt-down:preview-down"
 alias fzf-glow="fzf --preview='glow --style=dark {}' --preview-window='right:65%' --bind alt-up:preview-up,alt-down:preview-down"
 
+# source <(fzf --zsh)
 # eval "$(zoxide init zsh)"
 # eval "$(mcfly init zsh)"
