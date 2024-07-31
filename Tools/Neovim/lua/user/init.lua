@@ -1,5 +1,6 @@
-local default_directory = "~/Workspace/"
+local default_directory = "~/Workspaces/"
 
 vim.cmd.lcd(default_directory)
 
 require("user.neovide")
+
