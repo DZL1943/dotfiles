@@ -50,6 +50,7 @@
     "material-icon-theme.hidesExplorerArrows": true,
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.fontSize": 18,
+    "update.mode": "manual",
     "window.autoDetectColorScheme": false,
     "window.restoreWindows": "one",
     "window.titleBarStyle": "native",
@@ -60,7 +61,7 @@
     "workbench.startupEditor": "newUntitledFile",
 
     // 启动连按 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
-    "vim.disableExtension": false,
+    "vim.disableExtension": true,
     "vim.easymotion": true,
     // "vim.leader": "<space>",
     "vim.useSystemClipboard": true,
