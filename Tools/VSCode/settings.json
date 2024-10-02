@@ -52,6 +52,7 @@
     "terminal.integrated.fontSize": 18,
     "update.mode": "manual",
     "window.autoDetectColorScheme": false,
+    "window.customTitleBarVisibility": "never",
     "window.restoreWindows": "one",
     "window.titleBarStyle": "native",
     "workbench.editorAssociations": {},
