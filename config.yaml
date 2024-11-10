@@ -73,6 +73,9 @@ ansible:
 docker:
 podman:
 kubernetes:
+karabiner:
+  paths:
+    ~/.config/karabiner/karabiner.json: macOS/Karabiner/karabiner.json
 hammerspoon:
   paths:
     ~/.hammerspoon/init.lua: macOS/Hammerspoon/init.lua
