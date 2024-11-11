@@ -35,7 +35,7 @@ function obj:start()
     -- obj:_setupAppLauncher()
     obj:_setupWindowManager()
     obj:_toggleClock(true)
-    -- obj:_setupCaffeinateWatcher()
+    obj:_setupCaffeinateWatcher()
     -- obj:_mousetap()
     return self
 end
@@ -298,7 +298,7 @@ end
 
 function obj:_setupCaffeinateWatcher()
     local function quitApps()
-        apps = {'Microsoft Edge', 'ClashX Pro'}
+        apps = {'Clash Verge', 'Microsoft Edge', 'QQ', 'OBS'}
         for _, app in ipairs(apps) do
             ret = hs.osascript.applescript(string.format('quit app "%s"', app))
         end
@@ -310,7 +310,9 @@ function obj:_setupCaffeinateWatcher()
             print("screensDidWake")
         elseif (e == hs.caffeinate.watcher.screensDidLock) then
             print("screensDidLock")
-            quitApps()
+            -- quitApps()
+            ret = hs.osascript.applescriptFromFile(os.getenv('HOME')..'/bin/quitapps.applescript')
+            print(ret)
         elseif (e == hs.caffeinate.watcher.screensDidUnlock) then
             print("screensDidUnlock")
         end
