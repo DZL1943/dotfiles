@@ -75,7 +75,7 @@ function obj:_setupReloadConfig()
         cfgWatcher:start()
     end
 
-    keys = obj.map['reloadConfig']
+    local keys = obj.map['reloadConfig']
     hs.hotkey.bind(keys[1], keys[2], notifyAndReload)
 end
 
@@ -298,16 +298,22 @@ end
 
 function obj:_setupCaffeinateWatcher()
     local function quitApps()
-        apps = {'Clash Verge', 'Microsoft Edge', 'QQ', 'OBS'}
+        local apps = {'Clash Verge', 'OBS'}
         for _, app in ipairs(apps) do
-            ret = hs.osascript.applescript(string.format('quit app "%s"', app))
+            hs.osascript.applescript(string.format('quit app "%s"', app))
         end
     end
+    local function switchBluetooth(state)
+        -- STATE can be one of: 1, on, 0, off
+        local cmd = "/opt/homebrew/bin/blueutil --power "..(state)
+        local res = hs.osascript.applescript(string.format('do shell script "%s"', cmd))
+        print(res)
+    end
+
     local function caffeCallback(e)
         if (e == hs.caffeinate.watcher.screensDidSleep) then
             print("screensDidSleep")
-            ret = hs.osascript.applescriptFromFile(os.getenv('HOME')..'/bin/quitapps.applescript')
-            print(ret)
+            hs.osascript.applescriptFromFile(os.getenv('HOME')..'/bin/quitapps.applescript')
         elseif (e == hs.caffeinate.watcher.screensDidWake) then
             print("screensDidWake")
         elseif (e == hs.caffeinate.watcher.screensDidLock) then
@@ -315,10 +321,12 @@ function obj:_setupCaffeinateWatcher()
             quitApps()
         elseif (e == hs.caffeinate.watcher.screensDidUnlock) then
             print("screensDidUnlock")
+            switchBluetooth(0)
+            switchBluetooth(1)
         end
     end
 
-    caffeWatcher = hs.caffeinate.watcher.new(caffeCallback)
+    local caffeWatcher = hs.caffeinate.watcher.new(caffeCallback)
     obj.watchers['caffeWatcher'] = caffeWatcher
     caffeWatcher:start()
 end
