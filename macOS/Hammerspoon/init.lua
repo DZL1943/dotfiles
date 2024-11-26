@@ -16,6 +16,7 @@ obj.map = {
     toggleHelp = { { 'ctrl', 'alt' }, '/' },
     windowManager = { { 'ctrl', 'alt' }, 'w' },
     toggleClock = {{'ctrl', 'alt'}, 't'},
+    restartBt = {{'ctrl', 'alt'}, 'b'},
 }
 obj.spoons = {}
 
@@ -51,6 +52,10 @@ function obj:bindHotkeys(mapping)
         end,
         toggleClock = function ()
             obj:_toggleClock()
+        end,
+        restartBt = function ()
+            obj:_switchBluetooth(0)
+            obj:_switchBluetooth(1)
         end,
     }
     for k, v in pairs(mapping) do
@@ -296,18 +301,18 @@ function obj:_mousetap()
     mousetap:start()
 end
 
+function obj:_switchBluetooth(state)
+    -- STATE can be one of: 1, on, 0, off
+    local cmd = "/opt/homebrew/bin/blueutil --power "..(state)
+    hs.osascript.applescript(string.format('do shell script "%s"', cmd))
+end
+
 function obj:_setupCaffeinateWatcher()
     local function quitApps()
         local apps = {'Clash Verge', 'OBS'}
         for _, app in ipairs(apps) do
             hs.osascript.applescript(string.format('quit app "%s"', app))
         end
-    end
-    local function switchBluetooth(state)
-        -- STATE can be one of: 1, on, 0, off
-        local cmd = "/opt/homebrew/bin/blueutil --power "..(state)
-        local res = hs.osascript.applescript(string.format('do shell script "%s"', cmd))
-        print(res)
     end
 
     local function caffeCallback(e)
@@ -321,8 +326,8 @@ function obj:_setupCaffeinateWatcher()
             quitApps()
         elseif (e == hs.caffeinate.watcher.screensDidUnlock) then
             print("screensDidUnlock")
-            switchBluetooth(0)
-            switchBluetooth(1)
+            obj:_switchBluetooth(0)
+            obj:_switchBluetooth(1)
         end
     end
 
