@@ -326,8 +326,8 @@ function obj:_setupCaffeinateWatcher()
             quitApps()
         elseif (e == hs.caffeinate.watcher.screensDidUnlock) then
             print("screensDidUnlock")
-            obj:_switchBluetooth(0)
-            obj:_switchBluetooth(1)
+            -- obj:_switchBluetooth(0)
+            -- obj:_switchBluetooth(1)
         end
     end
 
