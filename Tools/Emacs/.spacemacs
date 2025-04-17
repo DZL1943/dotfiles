@@ -561,6 +561,11 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
       ("org-cn"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
       ("gnu-cn"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
   (global-tab-line-mode 1)
+  (set-frame-parameter nil 'alpha 85)
+  (when (eq system-type 'darwin)
+    (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
+    (add-to-list 'default-frame-alist '(ns-appearance . dark))
+  )
   )
 
 (defun dotspacemacs/user-config ()
