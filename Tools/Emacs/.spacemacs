@@ -210,7 +210,8 @@ It should only modify the values of Spacemacs settings."
    ;; package can be defined with `:package', or a theme can be defined with
    ;; `:location' to download the theme package, refer the themes section in
    ;; DOCUMENTATION.org for the full theme specifications.
-   dotspacemacs-themes '(spacemacs-dark
+   dotspacemacs-themes '(misterioso
+                         spacemacs-dark
                          spacemacs-light)
 
    ;; Set the theme for the Spaceline. Supported themes are `spacemacs',
@@ -560,12 +561,6 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
     '(("melpa-cn" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
       ("org-cn"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
       ("gnu-cn"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
-  (global-tab-line-mode 1)
-  (set-frame-parameter nil 'alpha 85)
-  (when (eq system-type 'darwin)
-    (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
-    (add-to-list 'default-frame-alist '(ns-appearance . dark))
-  )
   )
 
 (defun dotspacemacs/user-config ()
@@ -580,6 +575,16 @@ before packages are loaded."
                               ;; (width . 92) (height . ,(/ (- (x-display-pixel-height) 140) (frame-char-height)))
                               (width . (text-pixels . ,(round (* (x-display-pixel-width) 0.72)))) (height . (text-pixels . ,(round (* (x-display-pixel-height) 0.84))))
                               ))
+  (set-frame-parameter nil 'alpha 90)
+  (when (eq system-type 'darwin)
+    (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
+    (add-to-list 'default-frame-alist '(ns-appearance . dark))
+  )
+  (global-tab-line-mode 1)
+  (set-face-attribute 'tab-line nil :background "#2D3743" :foreground "white" :box nil)
+  (set-face-attribute 'tab-line-tab-inactive nil :background "#2D3743" :foreground "white" :box nil)
+  (set-face-attribute 'tab-line-tab-current nil :background "white" :foreground "blue" :box nil)
+  (set-face-attribute 'region nil :background "#6B8E23" :foreground "white")
   )
 
 
