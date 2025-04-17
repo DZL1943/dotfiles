@@ -123,12 +123,21 @@
     ;;   (set-face-attribute 'default nil :font
     ;;                       (format "%s:pixelsize=%d" (car fonts) 24)))
     (load-theme 'misterioso' t)
-    (set-face-attribute 'region nil :background "#6B8E23" :foreground "white")
-
     (global-tab-line-mode 1)
-    (set-face-attribute 'tab-line nil :background "#2D3743" :foreground "white" :box nil)
-    (set-face-attribute 'tab-line-tab-inactive nil :background "#2D3743" :foreground "white" :box nil)
-    (set-face-attribute 'tab-line-tab-current nil :background "white" :foreground "blue" :box nil)
+    ;; (set-face-attribute 'tab-line nil :background "#2D3743" :foreground "white" :box nil)
+    ;; (set-face-attribute 'tab-line-tab-inactive nil :background "#2D3743" :foreground "white" :box nil)
+    ;; (set-face-attribute 'tab-line-tab-current nil :background "white" :foreground "blue" :box nil)
+    ;; (set-face-attribute 'region nil :background "#6B8E23" :foreground "white")
+
+    (custom-theme-set-faces
+      'misterioso
+      '(tab-line ((t (:background "#2D3743" :foreground "white" :box nil))))
+      '(tab-line-tab-inactive ((t (:background "#2D3743" :foreground "white" :box nil))))
+      '(tab-line-tab-current ((t (:background "white" :foreground "blue" :box nil))))
+      '(region ((t (:background "#6B8E23" :foreground "white"))))
+      '(cursor ((t (:background "green"))))
+    )
+    (enable-theme 'misterioso)
 
     (set-frame-parameter nil 'alpha 85)
     (add-hook 'text-mode-hook (lambda () (text-scale-increase 2)))
