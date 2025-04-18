@@ -33,7 +33,7 @@ This function should only modify configuration layer settings."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(javascript
-    (python :variables python-backend 'lsp python-lsp-server 'pyright)
+     (python :variables python-backend 'lsp python-lsp-server 'pyright)
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
@@ -569,28 +569,42 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
-  ;; (set-face-attribute 'default nil :height 180)
-  (setq initial-frame-alist `(
-                              (top . 20) (left . 150)
-                              ;; (width . 92) (height . ,(/ (- (x-display-pixel-height) 140) (frame-char-height)))
-                              (width . (text-pixels . ,(round (* (x-display-pixel-width) 0.72)))) (height . (text-pixels . ,(round (* (x-display-pixel-height) 0.84))))
-                              ))
-  (set-frame-parameter nil 'alpha 90)
-  (when (eq system-type 'darwin)
-    (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
-    (add-to-list 'default-frame-alist '(ns-appearance . dark))
-    )
-  (global-tab-line-mode 1)
 
-  (custom-theme-set-faces
-   'misterioso
-   '(tab-line ((t (:background "#2D3743" :foreground "white" :box nil))))
-   '(tab-line-tab-inactive ((t (:background "#2D3743" :foreground "white" :box nil))))
-   '(tab-line-tab-current ((t (:background "white" :foreground "blue" :box nil))))
-   '(region ((t (:background "#6B8E23" :foreground "white"))))
-   '(cursor ((t (:background "green"))))
-   )
-  (enable-theme 'misterioso)
+  (if (window-system)
+    (progn
+        ;; (set-face-attribute 'default nil :height 180)
+        (setq initial-frame-alist `(
+                                    (top . 20) (left . 150)
+                                    ;; (width . 92) (height . ,(/ (- (x-display-pixel-height) 140) (frame-char-height)))
+                                    (width . (text-pixels . ,(round (* (x-display-pixel-width) 0.72)))) (height . (text-pixels . ,(round (* (x-display-pixel-height) 0.84))))
+                                    ))
+        (set-frame-parameter nil 'alpha 90)
+        (when (eq system-type 'darwin)
+          (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
+          (add-to-list 'default-frame-alist '(ns-appearance . dark))
+          )
+        (global-tab-line-mode 1)
+
+        (custom-theme-set-faces
+        'misterioso
+        '(tab-line ((t (:background "#2D3743" :foreground "white" :box nil))))
+        '(tab-line-tab-inactive ((t (:background "#2D3743" :foreground "white" :box nil))))
+        '(tab-line-tab-current ((t (:background "white" :foreground "blue" :box nil))))
+        '(region ((t (:background "#6B8E23" :foreground "white"))))
+        '(cursor ((t (:background "green"))))
+        )
+        (enable-theme 'misterioso)
+    )
+  )
+
+  (defun osc52-copy (text &optional push)
+    "Send TEXT to terminal via OSC52."
+    (when (and text (not (display-graphic-p)))
+      (let ((base64-text (base64-encode-string (encode-coding-string text 'utf-8 t) t)))
+        (send-string-to-terminal (format "\033]52;c;%s\a" base64-text))
+        (send-string-to-terminal (format "\033]52;p;%s\a" base64-text)))))
+
+  (setq interprogram-cut-function 'osc52-copy)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
