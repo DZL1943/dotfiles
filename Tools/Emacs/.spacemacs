@@ -570,32 +570,35 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
 
-  (if (window-system)
-    (progn
-        ;; (set-face-attribute 'default nil :height 180)
-        (setq initial-frame-alist `(
-                                    (top . 20) (left . 150)
-                                    ;; (width . 92) (height . ,(/ (- (x-display-pixel-height) 140) (frame-char-height)))
-                                    (width . (text-pixels . ,(round (* (x-display-pixel-width) 0.72)))) (height . (text-pixels . ,(round (* (x-display-pixel-height) 0.84))))
-                                    ))
-        (set-frame-parameter nil 'alpha 90)
-        (when (eq system-type 'darwin)
-          (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
-          (add-to-list 'default-frame-alist '(ns-appearance . dark))
-          )
-        (global-tab-line-mode 1)
+  (when (window-system)
+    ;; 基础窗口尺寸设置
+    (setq initial-frame-alist
+          `((top    . 20)
+            (left   . 150)
+            (width  . (text-pixels . ,(round (* (x-display-pixel-width) 0.72))))
+            (height . (text-pixels . ,(round (* (x-display-pixel-height) 0.84))))))
 
-        (custom-theme-set-faces
-        'misterioso
-        '(tab-line ((t (:background "#2D3743" :foreground "white" :box nil))))
-        '(tab-line-tab-inactive ((t (:background "#2D3743" :foreground "white" :box nil))))
-        '(tab-line-tab-current ((t (:background "white" :foreground "blue" :box nil))))
-        '(region ((t (:background "#6B8E23" :foreground "white"))))
-        '(cursor ((t (:background "green"))))
-        )
-        (enable-theme 'misterioso)
+    ;; 窗口透明度设置
+    (set-frame-parameter nil 'alpha 90)
+
+    ;; macOS 特定设置
+    (when (eq system-type 'darwin)
+      (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
+      (add-to-list 'default-frame-alist '(ns-appearance . dark)))
+    
+    ;; 全局标签栏
+    (global-tab-line-mode 1)
     )
-  )
+
+  ;; 主题自定义
+  (custom-theme-set-faces
+    'misterioso
+    '(tab-line             ((t (:background "#2D3743" :foreground "white" :box nil))))
+    '(tab-line-tab-inactive ((t (:background "#2D3743" :foreground "white" :box nil))))
+    '(tab-line-tab-current  ((t (:background "white" :foreground "blue" :box nil))))
+    '(region               ((t (:background "#6B8E23" :foreground "white"))))
+    '(cursor               ((t (:background "green")))))
+  (enable-theme 'misterioso)
 
   (defun osc52-copy (text &optional push)
     "Send TEXT to terminal via OSC52."
@@ -605,6 +608,9 @@ before packages are loaded."
         (send-string-to-terminal (format "\033]52;p;%s\a" base64-text)))))
 
   (setq interprogram-cut-function 'osc52-copy)
+
+  (load (expand-file-name "~/.quicklisp/slime-helper.el"))
+  (setq inferior-lisp-program "sbcl")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
