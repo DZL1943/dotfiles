@@ -611,6 +611,8 @@ before packages are loaded."
 
   (load (expand-file-name "~/.quicklisp/slime-helper.el"))
   (setq inferior-lisp-program "sbcl")
+
+  (global-set-key (kbd "<f9>") 'holy-mode)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
