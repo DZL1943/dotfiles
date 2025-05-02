@@ -600,6 +600,10 @@ before packages are loaded."
     '(cursor               ((t (:background "green")))))
   (enable-theme 'misterioso)
 
+  (setq evil-emacs-state-cursor '("green" (bar . 2))
+    evil-hybrid-state-cursor  '("yellow" (bar . 2))
+  )
+
   (defun osc52-copy (text &optional push)
     "Send TEXT to terminal via OSC52."
     (when (and text (not (display-graphic-p)))
