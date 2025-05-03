@@ -56,8 +56,8 @@
     "window.autoDetectColorScheme": false,
     "window.customTitleBarVisibility": "never",
     "window.restoreWindows": "one",
-    "window.titleBarStyle": "native",
-    "workbench.colorTheme": "Dracula Soft",
+    "window.titleBarStyle": "native",  // custom
+    "workbench.colorTheme": "Dracula Theme Soft",
     "workbench.editorAssociations": {},
     "workbench.editor.empty.hint": "hidden",
     "workbench.editor.wrapTabs": false,
@@ -67,19 +67,6 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorCustomizations": {
         "editorCursor.foreground": "#00FF00"
-    },
-
-    "apc.electron": {
-        "frame": false,
-        "titleBarStyle": "hiddenInset",
-        "opacity": 0.9,
-        "transparent": true,  // no effect
-        "vibrancy": "ultra-dark",  // no effect
-        "visualEffectState": "active",  // no effect
-        "trafficLightPosition": {
-          "x": 7,
-          "y": 5
-        }
     },
 
     "markdown.extension.list.indentationSize": "inherit", // important
@@ -134,4 +121,43 @@
 
     "ledger.binary": "/opt/homebrew/bin/ledger",
     "python.defaultInterpreterPath": "/Users/mac/opt/miniconda3/envs/py3",
+
+    // 1.93
+    // "apc.electron": {
+    //     "frame": false,
+    //     "titleBarStyle": "hiddenInset",
+    //     "opacity": 0.9,
+    //     // "transparent": true,
+    //     // "vibrancy": "ultra-dark",
+    //     // "visualEffectState": "active",
+    //     "trafficLightPosition": {
+    //       "x": 7,
+    //       "y": 5
+    //     }
+    // },
+    
+    "custom-ui-style.background.opacity": 0.9,  // not working
+    "custom-ui-style.electron": {
+        "frame": false,
+        // "transparent": true,
+        // "backgroundColor": "rgba(0, 0, 0, 0)",
+        // "vibrancy": "fullscreen-ui",
+        // "roundedCorners": false,
+    },
+    "custom-ui-style.stylesheet": {
+        ".monaco-workbench": {
+            "&:not(.fullscreen)": {
+                // Allow dragging on the activity-bar, status-bar, tabs-container, side-bar title...
+                ".activitybar, .statusbar, .tabs-container, .sidebar .composite.title": {
+                    "-webkit-app-region": "drag",
+
+                // ...but still allow to click actions and items without dragging.
+                    ".content .monaco-action-bar, .statusbar-item, .tab, .title .title-actions .action-label": {
+                        "-webkit-app-region": "no-drag"
+                    }
+                }
+            },
+        },
+        // "body > .monaco-workbench": " background-color: initial;"
+    },
 }
