@@ -318,7 +318,8 @@ function obj:_setupCaffeinateWatcher()
     local function caffeCallback(e)
         if (e == hs.caffeinate.watcher.screensDidSleep) then
             print("screensDidSleep")
-            hs.osascript.applescriptFromFile(os.getenv('HOME')..'/bin/quitapps.applescript')
+            local output, status, type, rc = hs.execute(string.format('/usr/bin/osascript "%s" 2>&1', os.getenv('HOME')..'/bin/quitapps.applescript'), true)
+            print(output)
         elseif (e == hs.caffeinate.watcher.screensDidWake) then
             print("screensDidWake")
         elseif (e == hs.caffeinate.watcher.screensDidLock) then
