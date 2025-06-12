@@ -2,7 +2,7 @@
 -- usage: osascript ~/bin/quitapps.applescript 2>&1
 -- https://stackoverflow.com/questions/495323/quit-all-applications-using-applescript
 
-set blackList to {"io.github.clash-verge-rev.clash-verge-rev", "com.microsoft.edgemac", "com.tencent.qq", "com.tencent.xinWeChat", "com.obsproject.obs-studio", "com.alicloud.smartdrive"}
+set blackList to {"io.github.clash-verge-rev.clash-verge-rev", "com.microsoft.edgemac", "com.tencent.qq", "com.tencent.xinWeChat", "com.obsproject.obs-studio", "com.alicloud.smartdrive", "com.kingsoft.wpsoffice.mac"}
 
 set whiteList to {"com.apple.finder", "com.apple.systempreferences", "com.apple.ScriptEditor2", "com.googlecode.iterm2", "net.kovidgoyal.kitty", "com.microsoft.VSCode", "jacklandrin.OnlySwitch", "md.obsidian"}
 
