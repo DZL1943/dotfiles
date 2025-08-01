@@ -25,6 +25,8 @@
     "edit_prediction_provider": "none"
   },
 
+  "on_last_window_closed": "quit_app",
+
   "project_panel": { "button": false },
   "outline_panel": { "button": false },
   "search": { "button": false },
