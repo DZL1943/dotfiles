@@ -33,12 +33,13 @@
   "git_panel": { "button": false },
   "agent": { "button": false },
   "collaboration_panel": { "button": false },
-  "chat_panel": { "button": "never" },
   "notification_panel": { "button": false },
   "debugger": { "button": false },
   "diagnostics": { "button": false },
   "terminal": { "button": false },
   "global_lsp_settings": { "button": false },
+
+  "status_bar": { "experimental.show": false},
 
   "toolbar": {
     "breadcrumbs": false, // Whether to show breadcrumbs.
