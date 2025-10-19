@@ -2,12 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>2C1A4BB5-4333-49AA-875F-3AABA6123A19_details</key>
+	<true/>
 	<key>Battery_barChart_position</key>
 	<integer>3</integer>
 	<key>Battery_batteryDetails_position</key>
 	<integer>4</integer>
 	<key>Battery_battery_additional</key>
-	<string>innerPercentage</string>
+	<string>percentage</string>
 	<key>Battery_battery_color</key>
 	<true/>
 	<key>Battery_battery_hideAdditionalWhenFull</key>
@@ -42,20 +44,24 @@
 	<integer>60</integer>
 	<key>LaunchAtLoginNext</key>
 	<true/>
+	<key>Macintosh HD_file:///_usedSpace</key>
+	<true/>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/Downloads</string>
 	<key>NSStatusItem Preferred Position Battery_battery</key>
-	<real>141</real>
+	<real>178</real>
 	<key>NSStatusItem Preferred Position CPU_mini</key>
-	<real>183</real>
+	<real>496</real>
 	<key>NSStatusItem Preferred Position Disk_mini</key>
-	<real>5416</real>
+	<real>590</real>
 	<key>NSStatusItem Preferred Position Network_speed</key>
-	<real>230</real>
+	<real>347</real>
 	<key>NSStatusItem Preferred Position RAM_mini</key>
-	<real>5463</real>
+	<real>543</real>
 	<key>NSStatusItem Preferred Position Sensors_sensors</key>
-	<real>5510</real>
+	<real>637</real>
+	<key>NSStatusItem Restore Position Sensors_mini</key>
+	<integer>522</integer>
 	<key>NSToolbar Configuration eu.exelban.Stats.Settings.Toolbar</key>
 	<dict>
 		<key>TB Display Mode</key>
@@ -68,13 +74,15 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>516 552 408 163 0 0 1440 900 </string>
+	<string>505 552 430 163 0 0 1440 900 </string>
 	<key>Network_speed_icon</key>
 	<string>none</string>
 	<key>Network_speed_monochrome</key>
 	<false/>
 	<key>Network_speed_transparentIcons</key>
 	<true/>
+	<key>Network_speed_valueAlignment</key>
+	<string>center</string>
 	<key>RAM_mini_color</key>
 	<string>pressure</string>
 	<key>RAM_notifications_total_state</key>
@@ -85,25 +93,37 @@
 	<integer>5</integer>
 	<key>RAM_updateTopInterval</key>
 	<integer>15</integer>
+	<key>Sensors_barChart_position</key>
+	<integer>3</integer>
 	<key>Sensors_hid</key>
 	<false/>
+	<key>Sensors_label_position</key>
+	<integer>1</integer>
+	<key>Sensors_mini_position</key>
+	<integer>2</integer>
+	<key>Sensors_stack_position</key>
+	<integer>0</integer>
 	<key>Sensors_state</key>
 	<true/>
 	<key>Sensors_updateInterval</key>
 	<integer>5</integer>
+	<key>Sensors_widget</key>
+	<string>sensors</string>
 	<key>runAtLoginInitialized</key>
 	<true/>
 	<key>sensor_TW0P</key>
 	<true/>
 	<key>setupProcess</key>
 	<true/>
+	<key>support_ts</key>
+	<integer>1757113790</integer>
 	<key>telemetry</key>
 	<false/>
-	<key>telemetry_id</key>
-	<string>3E5F5CB1-0533-4220-B85E-17526DA9F6A3</string>
+	<key>update-interval</key>
+	<string>Never</string>
 	<key>updater_check_ts</key>
-	<integer>1719428081</integer>
+	<integer>1749091033</integer>
 	<key>version</key>
-	<string>2.10.18</string>
+	<string>2.11.44</string>
 </dict>
 </plist>

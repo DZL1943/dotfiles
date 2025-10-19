@@ -16,7 +16,7 @@ obj.map = {
     toggleHelp = { { 'ctrl', 'alt' }, '/' },
     windowManager = { { 'ctrl', 'alt' }, 'w' },
     toggleClock = {{'ctrl', 'alt'}, 't'},
-    restartBt = {{'ctrl', 'alt'}, 'b'},
+    --restartBt = {{'ctrl', 'alt'}, 'b'},
 }
 obj.spoons = {}
 

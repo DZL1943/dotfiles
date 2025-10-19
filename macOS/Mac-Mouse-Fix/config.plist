@@ -5,7 +5,7 @@
 	<key>Constants</key>
 	<dict>
 		<key>configVersion</key>
-		<integer>23</integer>
+		<integer>24</integer>
 		<key>defaultRemaps</key>
 		<dict>
 			<key>fiveButtons</key>
@@ -230,7 +230,7 @@
 		<key>lockPointerDuringDrag</key>
 		<false/>
 		<key>scrollKillSwitch</key>
-		<false/>
+		<true/>
 		<key>showMenuBarItem</key>
 		<true/>
 	</dict>
@@ -255,6 +255,12 @@
 				<string>MM</string>
 				<string>NP</string>
 				<string>LB</string>
+				<string>EG</string>
+				<string>BY</string>
+				<string>VE</string>
+				<string>LK</string>
+				<string>SY</string>
+				<string>ZW</string>
 			</array>
 			<key>maxActivations</key>
 			<integer>25</integer>
@@ -267,10 +273,6 @@
 			<key>trialDays</key>
 			<integer>30</integer>
 		</dict>
-		<key>isLicensedCache</key>
-		<true/>
-		<key>licenseReasonCache</key>
-		<integer>4</integer>
 	</dict>
 	<key>Pointer</key>
 	<dict>
@@ -329,9 +331,9 @@
 			<key>effect</key>
 			<dict>
 				<key>flags</key>
-				<integer>1310985</integer>
+				<integer>1048848</integer>
 				<key>keycode</key>
-				<integer>3</integer>
+				<integer>43</integer>
 				<key>type</key>
 				<string>keyboardShortcut</string>
 			</dict>
@@ -351,9 +353,9 @@
 			<key>effect</key>
 			<dict>
 				<key>flags</key>
-				<integer>1048840</integer>
+				<integer>1310985</integer>
 				<key>keycode</key>
-				<integer>12</integer>
+				<integer>3</integer>
 				<key>type</key>
 				<string>keyboardShortcut</string>
 			</dict>
@@ -635,7 +637,7 @@
 			<key>swift</key>
 			<integer>262144</integer>
 			<key>zoom</key>
-			<integer>1048576</integer>
+			<integer>0</integer>
 		</dict>
 		<key>precise</key>
 		<false/>
@@ -653,11 +655,11 @@
 		<key>autosave_tabID</key>
 		<string>buttons</string>
 		<key>lastLaunchedBundleVersion</key>
-		<integer>22635</integer>
+		<integer>23732</integer>
 		<key>launchesOfCurrentBundleVersion</key>
-		<integer>8</integer>
+		<integer>2</integer>
 		<key>launchesOverall</key>
-		<integer>8</integer>
+		<integer>37</integer>
 		<key>remapsAreInitialized</key>
 		<true/>
 	</dict>
