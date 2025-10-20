@@ -69,6 +69,7 @@
     "workbench.preferredDarkColorTheme": "Night Owl",
     // "workbench.preferredLightColorTheme": "Atom One Light",
     "workbench.startupEditor": "newUntitledFile",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
     "workbench.colorCustomizations": {
         "editorCursor.foreground": "#00FF00"
     },
