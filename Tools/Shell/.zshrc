@@ -1,14 +1,12 @@
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
+# 初始化补全系统（必须）
 autoload -Uz compinit && compinit
 
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey "^[[A" up-line-or-beginning-search # Up
-bindkey "^[[B" down-line-or-beginning-search # Down
-#bindkey '^[[A' up-line-or-search
-#bindkey '^[[B' down-line-or-search
+# 配置Tab补全忽略大小写
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'l:|=* r:|=*'
+
+# 配置上下键根据输入前缀搜索历史命令
+bindkey "^[[A" history-search-backward
+bindkey "^[[B" history-search-forward
 
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
