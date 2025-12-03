@@ -1,89 +1,79 @@
-bash:
-  paths:
-    ~/.profile: Tools/Shell/.profile
-    ~/.bash_profile: Tools/Shell/.bash_profile
-    ~/.bashrc: Tools/Shell/.bashrc
-zsh:
-  paths:
-    ~/.zshenv: Tools/Shell/.zshenv
-    ~/.zprofile: Tools/Shell/.zprofile
-    ~/.zshrc: Tools/Shell/.zshrc
-    ~/.alias: Tools/Shell/.alias
-    ~/.env: Tools/Shell/.env
-fish:
-  paths:
-    ~/.config/fish/config.fish: Tools/Shell/config.fish
-vim:
-  paths:
-    ~/.vimrc: Tools/Vim/.vimrc
-nvim:
-  paths:
-    ~/.config/nvim/init.lua: Tools/Neovim/init.lua
-    ~/.config/nvim/lua/: Tools/Neovim/lua/.. 
-helix:
-  paths:
-    ~/.config/helix/config.toml: Tools/Helix/config.toml
-    ~/.config/helix/languages.toml: Tools/Helix/languages.toml
-emacs:
-  paths:
-    ~/.emacs.d/init.el: Tools/Emacs/init.el
-vscode:
-  paths:
-    "~/Library/Application Support/Code/User/settings.json": Tools/VSCode/settings.json
-    "~/Library/Application Support/Code/User/keybindings.json": Tools/VSCode/keybindings.json
-rime:
-  paths:
-    ~/Library/Rime/.: App/Rime/
-sogou:
-  paths:
-    "~/Library/Application Support/Sogou/InputMethod/SogouPY/symbolSubsitute.plist": App/SogouInput/symbolSubsitute.plist
-espanso:
-iterm2:
-  paths:
-    "~/Library/Preferences/com.googlecode.iterm2.plist": macOS/iTerm/com.googlecode.iterm2.plist
-    "~/Library/Application Support/iTerm2/DynamicProfiles/Profiles.json": macOS/iTerm/Profiles.json
-alacritty:
-  paths:
-    ~/.config/alacritty/alacritty.yml: Tools/Alacritty/alacritty.yml
-kitty:
-  paths:
-    ~/.config/kitty/kitty.conf: Tools/Kitty/kitty.conf
+shell:
+    - .alias
+    - .env
+    - .profile
+    - .bash_profile
+    - .bashrc
+    - .zshenv
+    - .zprofile
+    - .zshrc
+    - .config/fish/config.fish
 tmux:
-  paths:
-    ~/.tmux.conf: Tools/Tmux/.tmux.conf
+    - .tmux.conf
+kitty:
+    - .config/kitty/kitty.conf
+ghostty:
+    - .config/ghostty/config
+alacritty:
+    - .config/alacritty/alacritty.yml
+iterm2:
+    - Library/Preferences/com.googlecode.iterm2.plist
+    - .config/iterm2/AppSupport/DynamicProfiles/
+helix:
+    - .config/helix/config.toml
+    - .config/helix/languages.toml
+vim:
+    - .vimrc
+    - .gvimrc
+    - .vim/
+neovim:
+    - .config/nvim/
+emacs:
+    - .emacs
+    - .emacs.d/
+    - .config/emacs/
+    - .config/doom/
+    - .doom.d/
+    - .spacemacs.d/
+    - .spacemacs
+vscode:
+    - Library/Application Support/Code/User/settings.json
+    - Library/Application Support/Code/User/keybindings.json
+zed:
+    - .config/zed/settings.json
+yazi:
+    - .config/yazi/yazi.toml
+mackup:
+    - .mackup.cfg
+    - .mackup/
 git:
-  paths:
-    ~/.gitconfig: Tools/Git/.gitconfig
-nodejs:
-  paths:
-    ~/.npmrc: Dev/JavaScript/.npmrc
+    - .gitconfig
+ssh:
+    - .ssh/config
 pip:
-  paths:
-    ~/.config/pip/pip.conf: Dev/Python/pip.conf
+    - .config/pip/pip.conf
 conda:
-  paths:
-    ~/.condarc: Dev/Python/.condarc
+    - .condarc
+npm:
+    - .npmrc
+#maven:
 cargo:
-  paths:
-    ~/.cargo/config.toml: Dev/Rust/config.toml
-sbt:
-  paths:
-    ~/.sbt/repositories: Dev/Scala/repositories
-ansible:
-docker:
-podman:
-kubernetes:
-karabiner:
-  paths:
-    ~/.config/karabiner/karabiner.json: macOS/Karabiner/karabiner.json
+    - .cargo/config.toml
+orbstack:
+    - .orbstack/config/docker.json
+rime:
+    - Library/Rime/
+fcitx5:
+    - .config/fcitx5/: .config/
+    - .local/share/fcitx5/: .local/share/
 hammerspoon:
-  paths:
-    ~/.hammerspoon/init.lua: macOS/Hammerspoon/init.lua
-sleepwatcher:
-  paths:
-    ~/.sleep: macOS/SleepWatcher/.sleep
-    ~/.wakeup: macOS/SleepWatcher/.wakeup
+    - .hammerspoon/init.lua
+#raycast:
+#karabiner:
 mac-mouse-fix:
-  paths:
-    "~/Library/Application Support/com.nuebling.mac-mouse-fix/config.plist": macOS/Mac-Mouse-Fix/config.plist
-obs:
+    - Library/Application Support/com.nuebling.mac-mouse-fix/config.plist
+xgestures:
+    - Library/Preferences/what.xGestures.plist
+stats:
+    - Library/Preferences/eu.exelban.Stats.plist
+#firefox:
