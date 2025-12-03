@@ -1,0 +1,108 @@
+{
+    "createdBy": "Redirector v3.5.3",
+    "createdAt": "2025-12-01T13:23:43.254Z",
+    "redirects": [
+        {
+            "description": "91porny",
+            "exampleUrl": "https://nfr.jstv9929.xyz/video/view/1904386336",
+            "exampleResult": "https://dgm.jiuselu180.cc/video/view/1904386336",
+            "error": null,
+            "includePattern": "https://(.*)/video(s)?/view(hd)?/(.*)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://dgm.jiuselu180.cc/video$2/view/$4",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "91porn",
+            "exampleUrl": "https://1004.sol140.com/view_video.php?viewkey=aea089d8f6ad98ee3a38&page=1&c=3drue&viewtype=basic&category=mr",
+            "exampleResult": "https://www.91porn.com/view_video.php?viewkey=aea089d8f6ad98ee3a38&page=1&c=3drue&viewtype=basic&category=mr",
+            "error": null,
+            "includePattern": "https://(.*)/view_video.php(.*)",
+            "excludePattern": "https://www.pornhub.com/view_video.php.*",
+            "patternDesc": "",
+            "redirectUrl": "https://www.91porn.com/view_video.php$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "ssp",
+            "exampleUrl": "https://www.sese8263.com/videos/22749/91-f-3p-720p/",
+            "exampleResult": "https://www.sebxx.cc/videos/22749/91-f-3p-720p/",
+            "error": null,
+            "includePattern": "https://(.*)/videos/(.*)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www.sebxx.cc/videos/$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "porn2porny",
+            "exampleUrl": "https://0408.9p47q.com/view_video.php?viewkey=5d0dfb4d7c4aa4f2420d&page=18&c=f8os3&viewtype=basic&category=mr",
+            "exampleResult": "https://dom3.xinhua48.com/video/view/5d0dfb4d7c4aa4f2420d",
+            "error": null,
+            "includePattern": "https://(.*)/view_video.php\\?viewkey=([a-z0-9]+).*",
+            "excludePattern": "https://www.pornhub.com/view_video.php.*",
+            "patternDesc": "",
+            "redirectUrl": "https://dom3.xinhua48.com/video/view/$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "chigua",
+            "exampleUrl": "https://address.aqjmpcjl.com/archives/185485/",
+            "exampleResult": "https://iv5dh.yhoqfhx.xyz/archives/185485/",
+            "error": null,
+            "includePattern": "https://(.*)/archives/(\\d+)/",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://iv5dh.yhoqfhx.xyz/archives/$2/",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "missav",
+            "exampleUrl": "https://missav789.com/dm52/cn/pppd-439-uncensored-leak",
+            "exampleResult": "https://missav.ws/dm52/cn/pppd-439-uncensored-leak",
+            "error": null,
+            "includePattern": "https://missav[0-9]+.com/(.*)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://missav.ws/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        }
+    ]
+}
